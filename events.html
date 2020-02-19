@@ -1,0 +1,1109 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Events | AAROHAN</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Angular Js -->
+  <!-- <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+  <link href="img/title_icon.png" rel="icon">
+  <link rel="stylesheet" href="css/event.css">
+  <script src="js/event.js"></script>
+  <script>
+    function alert_func() {
+      alert("Not Uploaded yet.");
+    }
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    //alert('This page is Under Construction. You can play game on our website while waiting.');
+    function announcement_func() {
+      //alert(cell_data);
+      document.getElementById("announcement_div").style.opacity = 1;
+      document.getElementById("announcement_div").style.height = "20px";
+      document.getElementById("announce").innerHTML = "AAROHAN'20    |     20-21-22 March   |    Mark Your Calenders";
+    }
+    function hide_preload() {
+      document.getElementById('logo_hover_preload').style.display = 'none';
+      document.getElementById('logo_pic').style.display = 'inherit';
+    }
+  </script>
+
+</head>
+
+<body style="background-image: url('img/about.jpg')" onload="announcement_func();">
+  <div style="background-image: url(img/bg.jpg);background-attachment: fixed;">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar" style="background: #212121;">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"
+            style="float: left;margin-left: 5px;">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a id="home_button" class="navbar-brand" href="index.html"><img src="img/nav.png"
+              style="max-height: 70px;margin-top: -20px;"></a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="game.html" onclick="gamedisplay();">Play Now!</a></li>
+            <li><a href="index.html">Home</a></li>
+            <!-- <li class="active"><a href="events.html">Events</a></li> -->
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="spnonsors.html">Sponsors</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="announcement_div" style="opacity: 0; height: 0px; background-color: #FFC000;">
+        <center>
+          <marquee>
+            <font color="black" id="announce"></font>
+          </marquee>
+        </center>
+      </div>
+    </nav>
+    <!-- End of Navigation Bar -->
+
+    <div class="container" id="iContainer" style="margin-top: 25px;">
+      <div align="center">
+        <a href="docs/RuleBook.pdf" target="_blank" class="btn btn-info btn-lg"
+          style="margin:auto;display:table;background-color: #d32f2f;border: #d32f2f;display: inline-block;">Rule
+          Book</a></div>
+      <div class="row" id="fRow">
+
+        <a href="#!" style="text-decoration: none;">
+          <div class="col-sm-4" id="fCol" data-toggle="modal" data-target="#athle">
+            <div class="panel panel-default text-center" id="fPanel">
+              <div class="panel-heading" id="pHead" style="background-color: #ff9900;">
+                <h3>Athletics</h3>
+              </div>
+              <div class="panel-body" id="pBody">
+                <!-- Image -->
+                <img src="img/icon/ath.png"><br>
+              </div>
+              <div class="panel-footer" id="pFooter" style="background-color: #ff9900;">
+                <h4>Details</h4>
+              </div>
+            </div>
+          </div>
+        </a>
+
+
+        <a href="#!" style="text-decoration: none;">
+          <div class="col-sm-4" id="fCol" data-toggle="modal" data-target="#badminton_boys">
+            <div class="panel panel-default text-center" id="fPanel">
+              <div class="panel-heading" id="pHead" style="background: #cc6600;">
+                <h3>Badminton (Boys)</h3>
+              </div>
+              <div class="panel-body" id="pBody">
+
+                <!-- Image -->
+                <img src="img/icon/bad.png">
+                <br>
+              </div>
+              <div class="panel-footer" id="pFooter" style="background: #cc6600;">
+                <h4>Details</h4>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="#!" style="text-decoration: none;">
+          <div class="col-sm-4" id="fCol" data-toggle="modal" data-target="#badminton_girls">
+            <div class="panel panel-default text-center" id="fPanel">
+              <div class="panel-heading" id="pHead" style="background-color: #cc66cc;">
+                <h3>Badminton (Girls)</h3>
+              </div>
+              <div class="panel-body" id="pBody">
+                <!-- Image -->
+                <img src="img/icon/badmintonW.png"><br>
+              </div>
+              <div class="panel-footer" id="pFooter" style="background-color: #cc66cc;">
+                <h4>Details</h4>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="#!" style="text-decoration: none;">
+          <div class="col-sm-4" id="fCol" data-toggle="modal" data-target="#basketball_boys">
+            <div class="panel panel-default text-center" id="fPanel">
+              <div class="panel-heading" id="pHead" style="background-color: #ff3366;">
+                <h3>Basketball (Boys)</h3>
+              </div>
+              <div class="panel-body" id="pBody">
+                <!-- Image -->
+                <img src="img/icon/basketballB.png"><br>
+              </div>
+              <div class="panel-footer" id="pFooter" style="background-color: #ff3366;">
+                <h4>Details</h4>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="#!" style="text-decoration: none;">
+          <div class="col-sm-4" id="fCol" data-toggle="modal" data-target="#basketball_girls">
+            <div class="panel panel-default text-center" id="fPanel">
+              <div class="panel-heading" id="pHead" style="background-color: #0099cc;">
+                <h3>Basketball (Girls)</h3>
+              </div>
+              <div class="panel-body" id="pBody">
+                <!-- Image -->
+                <img src="img/icon/basketballGA.png"><br>
+              </div>
+              <div class="panel-footer" id="pFooter" style="background-color: #0099cc;">
+                <h4>Details</h4>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="#!" style="text-decoration: none;">
+          <div class="col-sm-4" id="fCol" data-toggle="modal" data-target="#chess_">
+            <div class="panel panel-default text-center" id="fPanel">
+              <div class="panel-heading" id="pHead" style="background-color: #cc3333;">
+                <h3>Chess</h3>
+              </div>
+              <div class="panel-body" id="pBody">
+                <!-- Image -->
+                <img src="img/icon/chessA.png"><br>
+              </div>
+              <div class="panel-footer" id="pFooter" style="background-color: #cc3333;">
+                <h4>Details</h4>
+              </div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="row" id="fRow">
+
+        <a href="#!" style="text-decoration: none;">
+          <div class="col-sm-4" id="fCol" data-toggle="modal" data-target="#cricket_">
+            <div class="panel panel-default text-center" id="fPanel">
+              <div class="panel-heading" id="pHead" style="background-color: #0099cc;">
+                <h3>Cricket</h3>
+              </div>
+              <div class="panel-body" id="pBody">
+
+                <!-- Image -->
+                <img src="img/icon/cricket.png">
+                <br>
+              </div>
+              <div class="panel-footer" id="pFooter" style="background-color: #0099cc;">
+                <h4>Details</h4>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="#!" style="text-decoration: none;">
+          <div class="col-sm-4" id="fCol" data-toggle="modal" data-target="#football_">
+            <div class="panel panel-default text-center" id="fPanel">
+              <div class="panel-heading" id="pHead" style="background-color: #00cc66;">
+                <h3>Football</h3>
+              </div>
+              <div class="panel-body" id="pBody">
+                <!-- Image -->
+                <img src="img/icon/foot.png"><br>
+              </div>
+              <div class="panel-footer" id="pFooter" style="background-color: #00cc66;">
+                <h4>Details</h4>
+              </div>
+            </div>
+          </div>
+        </a>
+
+
+        <a href="#!" style="text-decoration: none;">
+          <div class="col-sm-4" id="fCol">
+            <div class="panel panel-default text-center" id="fPanel" data-toggle="modal" data-target="#tennis_b">
+              <div class="panel-heading" id="pHead" style="background-color: #ff9900;">
+                <h3>Tennis (Boys)</h3>
+              </div>
+              <div class="panel-body" id="pBody">
+
+                <img src="img/icon/lawn_tennis.png"><br>
+              </div>
+              <div class="panel-footer" id="pFooter" style="background-color: #ff9900;">
+                <h4>Details</h4>
+              </div>
+            </div>
+          </div>
+          <a href="#!" style="text-decoration: none;">
+            <div class="col-sm-4" id="fCol">
+              <div class="panel panel-default text-center" id="fPanel" data-toggle="modal" data-target="#tennis_g">
+                <div class="panel-heading" id="pHead" style="background-color: #ff9900;">
+                  <h3>Tennis (Girls)</h3>
+                </div>
+                <div class="panel-body" id="pBody">
+
+                  <img src="img/icon/lawn_tennisW.png"><br>
+                </div>
+                <div class="panel-footer" id="pFooter" style="background-color: #ff9900;">
+                  <h4>Details</h4>
+                </div>
+              </div>
+            </div>
+            <a href="#!" style="text-decoration: none;">
+              <div class="col-sm-4" id="fCol">
+                <div class="panel panel-default text-center" id="fPanel" data-toggle="modal" data-target="#power_">
+                  <div class="panel-heading" id="pHead" style="background-color: #ff9900;">
+                    <h3>Powerlifting(Boys)</h3>
+                  </div>
+                  <div class="panel-body" id="pBody">
+
+                    <img src="img/icon/power.png"><br>
+                  </div>
+                  <div class="panel-footer" id="pFooter" style="background-color: #ff9900;">
+                    <h4>Details</h4>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#!" style="text-decoration: none;">
+                <div class="col-sm-4" id="fCol">
+                  <div class="panel panel-default text-center" id="fPanel" data-toggle="modal" data-target="#tt_boys">
+                    <div class="panel-heading" id="pHead" style="background-color: #339933;">
+                      <h3>Table Tennis (Boys)</h3>
+                    </div>
+                    <div class="panel-body" id="pBody">
+
+                      <!-- Image -->
+                      <img src="img/icon/table_tennis.png">
+                      <br>
+                    </div>
+                    <div class="panel-footer" id="pFooter" style="background-color: #339933;">
+                      <h4>Details</h4>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#!" style="text-decoration: none;">
+                <div class="col-sm-4" id="fCol">
+                  <div class="panel panel-default text-center" id="fPanel" data-toggle="modal" data-target="#tt_girls">
+                    <div class="panel-heading" id="pHead" style="background-color: #cccc33;">
+                      <h3>Table Tennis (Girls)</h3>
+                    </div>
+                    <div class="panel-body" id="pBody">
+                      <img src="img/icon/table_tennisW.png"><br>
+                    </div>
+                    <div class="panel-footer" id="pFooter" style="background-color: #cccc33;">
+                      <h4>Details</h4>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+
+              <a href="#!" style="text-decoration: none;">
+                <div class="col-sm-4" id="fCol">
+                  <div class="panel panel-default text-center" id="fPanel" data-toggle="modal"
+                    data-target="#volleyball_boys">
+                    <div class="panel-heading" id="pHead" style="background-color: #3366cc;">
+                      <h3>VolleyBall (Boys)</h3>
+                    </div>
+                    <div class="panel-body" id="pBody">
+
+                      <img src="img/icon/volley.png"><br>
+                    </div>
+                    <div class="panel-footer" id="pFooter" style="background-color: #3366cc;">
+                      <h4>Details</h4>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#!" style="text-decoration: none;">
+                <div class="col-sm-4" id="fCol">
+                  <div class="panel panel-default text-center" id="fPanel" data-toggle="modal"
+                    data-target="#volleyball_girls">
+                    <div class="panel-heading" id="pHead" style="background-color: #9999ff;">
+                      <h3>VolleyBall (Girls)</h3>
+                    </div>
+                    <div class="panel-body" id="pBody">
+                      <!-- Image -->
+                      <img src="img/icon/volleyballWA.png"><br>
+                    </div>
+                    <div class="panel-footer" id="pFooter" style="background-color: #9999ff;">
+                      <h4>Details</h4>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+      </div>
+
+      <div class="row" id="fRow">
+
+
+
+
+      </div>
+      <div class="row" id="fRow">
+
+
+
+
+
+      </div>
+      <div class="row" id="fRow">
+
+
+
+
+
+      </div>
+
+    </div>
+
+    <!-- Modal Start of Badminton Boys-->
+    <div id="badminton_boys" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title text-center">Badminton (Boys)</h2>
+          </div>
+          <div class="modal-body">
+            <div class="main-model">
+              <div class="rule-div mod">
+                <h2><i class="fas fa-book"></i><span style="padding-left: 10px;">Rule Book</span></h2>
+                <a target="_blank" href="docs/Badminton.pdf" class="btn btn-info btn-lg"
+                  style="margin:auto;display:table;">
+                  <i class="fas fa-download"></i> Download
+                </a>
+                <br>
+              </div>
+              <hr>
+              <div class="past-winner-div mod">
+                <h2><i class="fas fa-trophy"></i><span style="padding-left: 10px;">Past Winners</span></h2>
+                <h4 style="padding-left: 50px;">Chitkara Punjab<br>JUIT<br>NIT Jalandhar</h4>
+              </div>
+              <hr>
+              <div class="contact-div mod">
+                <h2><i class="fas fa-address-book"></i><span style="padding-left: 10px;">Contacts</span></h2>
+                <div style="padding-left: 50px;">
+                  <h4>Vaibhav<br>
+                    +91-8875646175<br></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScdCdHsOFxyeGAwegCtC1YkVPkvOweRRDImHptXLnVmynvGcA/viewform"
+              target="_blank"><button type="button" class="btn btn-success" id="reg_btn">Register</button></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Modal end of Badminton Boys -->
+    <!-- Modal Start of Athletics Boys-->
+    <div id="tennis_g" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title text-center">Tennis (Girls)</h2>
+          </div>
+          <div class="modal-body">
+            <div class="main-model">
+              <div class="rule-div mod">
+                <h2><i class="fas fa-book"></i><span style="padding-left: 10px;">Rule Book</span></h2>
+                <a target="_blank" href="docs/Lawntennis.pdf" class="btn btn-info btn-lg"
+                  style="margin:auto;display:table;">
+                  <i class="fas fa-download"></i> Download
+                </a>
+                <br>
+              </div>
+              <hr>
+              <div class="past-winner-div mod">
+                <h2><i class="fas fa-trophy"></i><span style="padding-left: 10px;">Past Winners</span></h2>
+                <h4 style="padding-left: 50px;">-</h4>
+              </div>
+              <hr>
+              <div class="contact-div mod">
+                <h2><i class="fas fa-address-book"></i><span style="padding-left: 10px;">Contacts</span></h2>
+                <div style="padding-left: 50px;">
+                  <h4>
+                    Tejesh<br>
+                    +91-9121828374<br></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScdCdHsOFxyeGAwegCtC1YkVPkvOweRRDImHptXLnVmynvGcA/viewform"
+              target="_blank"><button type="button" class="btn btn-success" id="reg_btn">Register</button></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Modal end of Badminton Boys -->
+
+    <!-- Modal Start of Athletics Boys-->
+    <div id="athle" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title text-center">Athletics</h2>
+          </div>
+          <div class="modal-body">
+            <div class="main-model">
+              <div class="rule-div mod">
+                <h2><i class="fas fa-book"></i><span style="padding-left: 10px;">Rule Book</span></h2>
+                <a target="_blank" href="docs/Atheletics.pdf" class="btn btn-info btn-lg"
+                  style="margin:auto;display:table;">
+                  <i class="fas fa-download"></i> Download
+                </a>
+                <br>
+              </div>
+              <hr>
+              <div class="past-winner-div mod">
+                <h2><i class="fas fa-trophy"></i><span style="padding-left: 10px;">Past Winners</span></h2>
+                <h4 style="padding-left: 50px;">Discus: IIT Ropar IIT Ropar IIT Ropar<br>ShotPut: Chitkara HP IIT Ropar
+                  IIT Ropar<br>LongJump: Chitkara HP IIT Ropar IIT Ropar </h4>
+              </div>
+              <hr>
+              <div class="contact-div mod">
+                <h2><i class="fas fa-address-book"></i><span style="padding-left: 10px;">Contacts</span></h2>
+                <div style="padding-left: 50px;">
+                  <h4>
+                    Ankit Choudhary<br>
+                    +91-8146682029<br>
+                    <br></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScdCdHsOFxyeGAwegCtC1YkVPkvOweRRDImHptXLnVmynvGcA/viewform"
+              target="_blank"><button type="button" class="btn btn-success" id="reg_btn">Register</button></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Modal end of Badminton Boys -->
+
+    <!-- Modal Start of Badminton Girls-->
+    <div id="badminton_girls" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title text-center">Badminton (Girls)</h2>
+          </div>
+          <div class="modal-body">
+            <div class="main-model">
+              <div class="rule-div mod">
+                <h2><i class="fas fa-book"></i><span style="padding-left: 10px;">Rule Book</span></h2>
+                <a target="_blank" href="docs/Badminton.pdf" class="btn btn-info btn-lg"
+                  style="margin:auto;display:table;">
+                  <i class="fas fa-download"></i> Download
+                </a>
+                <br>
+              </div>
+              <hr>
+              <div class="past-winner-div mod">
+                <h2><i class="fas fa-trophy"></i><span style="padding-left: 10px;">Past Winners</span></h2>
+                <h4 style="padding-left: 50px;">IIT Ropar<br>Chitkara HP<br>AKG Engineering College</h4>
+              </div>
+              <hr>
+              <div class="contact-div mod">
+                <h2><i class="fas fa-address-book"></i><span style="padding-left: 10px;">Contacts</span></h2>
+                <div style="padding-left: 50px;">
+                  <h4>Vaibhav<br>
+                    +91-8875646175<br></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScdCdHsOFxyeGAwegCtC1YkVPkvOweRRDImHptXLnVmynvGcA/viewform"
+              target="_blank"><button type="button" class="btn btn-success" id="reg_btn">Register</button></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Modal end of Badminton Girls -->
+    <!--Modal Start-->
+    <div id="power_" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title text-center">Powerlifting (Boys)</h2>
+          </div>
+          <div class="modal-body">
+            <div class="main-model">
+              <div class="rule-div mod">
+                <h2><i class="fas fa-book"></i><span style="padding-left: 10px;">Rule Book</span></h2>
+                <a target="_blank" href="docs/power.pdf" class="btn btn-info btn-lg" style="margin:auto;display:table;">
+                  <i class="fas fa-download"></i> Download
+                </a>
+                <br>
+              </div>
+              <hr>
+              <div class="past-winner-div mod">
+                <h2><i class="fas fa-trophy"></i><span style="padding-left: 10px;">Past Winners</span></h2>
+                <h4 style="padding-left: 50px;">-</h4>
+              </div>
+              <hr>
+              <div class="contact-div mod">
+                <h2><i class="fas fa-address-book"></i><span style="padding-left: 10px;">Contacts</span></h2>
+                <div style="padding-left: 50px;">
+                  <h4>Prajwal Sharma<br>
+                    +91-9871948530<br></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScdCdHsOFxyeGAwegCtC1YkVPkvOweRRDImHptXLnVmynvGcA/viewform"
+              target="_blank"><button type="button" class="btn btn-success" id="reg_btn">Register</button></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Modal end of Badminton Girls -->
+    <!-- Modal Start of Basketball-->
+    <div id="basketball_boys" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title text-center">Basketball (Boys)</h2>
+          </div>
+          <div class="modal-body">
+            <div class="main-model">
+              <div class="rule-div mod">
+                <h2><i class="fas fa-book"></i><span style="padding-left: 10px;">Rule Book</span></h2>
+                <a target="_blank" href="docs/Basketball.pdf" class="btn btn-info btn-lg"
+                  style="margin:auto;display:table;">
+                  <i class="fas fa-download"></i> Download
+                </a>
+                <br>
+              </div>
+              <hr>
+              <div class="past-winner-div mod">
+                <h2><i class="fas fa-trophy"></i><span style="padding-left: 10px;">Past Winners</span></h2>
+                <h4 style="padding-left: 50px;">Chitkara Punjab<br>Chitkara HP<br>IIT Ropar</h4>
+              </div>
+              <hr>
+              <div class="contact-div mod">
+                <h2><i class="fas fa-address-book"></i><span style="padding-left: 10px;">Contacts</span></h2>
+                <div style="padding-left: 50px;">
+                  <h4>
+                    Mayank Raj<br>
+                    +91-90799350330<br></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScdCdHsOFxyeGAwegCtC1YkVPkvOweRRDImHptXLnVmynvGcA/viewform"
+              target="_blank"><button type="button" class="btn btn-success" id="reg_btn">Register</button></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Modal end of Basketball -->
+
+    <!-- Modal Start of Cricket-->
+    <div id="cricket_" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title text-center">Cricket</h2>
+          </div>
+          <div class="modal-body">
+            <div class="main-model">
+              <div class="rule-div mod">
+                <h2><i class="fas fa-book"></i><span style="padding-left: 10px;">Rule Book</span></h2>
+                <a target="_blank" href="docs/Cricket.pdf" class="btn btn-info btn-lg"
+                  style="margin:auto;display:table;">
+                  <i class="fas fa-download"></i> Download
+                </a>
+                <br>
+              </div>
+              <hr>
+              <div class="past-winner-div mod">
+                <h2><i class="fas fa-trophy"></i><span style="padding-left: 10px;">Past Winners</span></h2>
+                <h4 style="padding-left: 50px;">IIT Ropar<br>MNIT Jaipur</h4>
+              </div>
+              <hr>
+              <div class="contact-div mod">
+                <h2><i class="fas fa-address-book"></i><span style="padding-left: 10px;">Contacts</span></h2>
+                <div style="padding-left: 50px;">
+                  <h4>
+                    Jashan Sanger<br>
+                    +91-9988069842<br>
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScdCdHsOFxyeGAwegCtC1YkVPkvOweRRDImHptXLnVmynvGcA/viewform"
+              target="_blank"><button type="button" class="btn btn-success" id="reg_btn">Register</button></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Modal end of Cricket -->
+
+    <!-- Modal Start of Football-->
+    <div id="football_" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title text-center">Football</h2>
+          </div>
+          <div class="modal-body">
+            <div class="main-model">
+              <div class="rule-div mod">
+                <h2><i class="fas fa-book"></i><span style="padding-left: 10px;">Rule Book</span></h2>
+                <a target="_blank" href="docs/Football.pdf" class="btn btn-info btn-lg"
+                  style="margin:auto;display:table;">
+                  <i class="fas fa-download"></i> Download
+                </a>
+                <br>
+              </div>
+              <hr>
+              <div class="past-winner-div mod">
+                <h2><i class="fas fa-trophy"></i><span style="padding-left: 10px;">Past Winners</span></h2>
+                <h4 style="padding-left: 50px;">IIT Ropar<br>IET Bhaddal<br>Chitkara Punjab</h4>
+              </div>
+              <hr>
+              <div class="contact-div mod">
+                <h2><i class="fas fa-address-book"></i><span style="padding-left: 10px;">Contacts</span></h2>
+                <div style="padding-left: 50px;">
+                  <h4>Abhishek<br>
+                    +91-8708725393<br></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScdCdHsOFxyeGAwegCtC1YkVPkvOweRRDImHptXLnVmynvGcA/viewform"
+              target="_blank"><button type="button" class="btn btn-success" id="reg_btn">Register</button></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Modal end of football -->
+
+    <!-- Modal Start of Basketball-->
+    <div id="volleyball_boys" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title text-center">Volleyball (Boys)</h2>
+          </div>
+          <div class="modal-body">
+            <div class="main-model">
+              <div class="rule-div mod">
+                <h2><i class="fas fa-book"></i><span style="padding-left: 10px;">Rule Book</span></h2>
+                <a target="_blank" href="docs/Volleyball.pdf" class="btn btn-info btn-lg"
+                  style="margin:auto;display:table;">
+                  <i class="fas fa-download"></i> Download
+                </a>
+                <br>
+              </div>
+              <hr>
+              <div class="past-winner-div mod">
+                <h2><i class="fas fa-trophy"></i><span style="padding-left: 10px;">Past Winners</span></h2>
+                <h4 style="padding-left: 50px;">MNIT Jaipur<br>Chitkara Punjab<br>IIT Ropar</h4>
+              </div>
+              <hr>
+              <div class="contact-div mod">
+                <h2><i class="fas fa-address-book"></i><span style="padding-left: 10px;">Contacts</span></h2>
+                <div style="padding-left: 50px;">
+                  <h4>Rahul Bharti<br>
+                    +91-9915405007<br></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScdCdHsOFxyeGAwegCtC1YkVPkvOweRRDImHptXLnVmynvGcA/viewform"
+              target="_blank"><button type="button" class="btn btn-success" id="reg_btn">Register</button></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Modal end of Bolleyball Boys -->
+
+    <!-- Modal Start of Tt boys-->
+    <div id="tt_boys" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title text-center">Table Tennis (Boys)</h2>
+          </div>
+          <div class="modal-body">
+            <div class="main-model">
+              <div class="rule-div mod">
+                <h2><i class="fas fa-book"></i><span style="padding-left: 10px;">Rule Book</span></h2>
+                <a target="_blank" href="docs/Tabletennis.pdf" class="btn btn-info btn-lg"
+                  style="margin:auto;display:table;">
+                  <i class="fas fa-download"></i> Download
+                </a>
+                <br>
+              </div>
+              <hr>
+              <div class="past-winner-div mod">
+                <h2><i class="fas fa-trophy"></i><span style="padding-left: 10px;">Past Winners</span></h2>
+                <h4 style="padding-left: 50px;">Chitkara Punjab <br>IIT Ropar<br>JUIT</h4>
+              </div>
+              <hr>
+              <div class="contact-div mod">
+                <h2><i class="fas fa-address-book"></i><span style="padding-left: 10px;">Contacts</span></h2>
+                <div style="padding-left: 50px;">
+                  <h4>Vighanesh<br>
+                    +91-9796466366<br></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScdCdHsOFxyeGAwegCtC1YkVPkvOweRRDImHptXLnVmynvGcA/viewform"
+              target="_blank"><button type="button" class="btn btn-success" id="reg_btn">Register</button></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Modal end of Basketball -->
+
+    <!-- Modal Start of Basketball-->
+    <div id="tt_girls" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title text-center">Table Tennis (Girls)</h2>
+          </div>
+          <div class="modal-body">
+            <div class="main-model">
+              <div class="rule-div mod">
+                <h2><i class="fas fa-book"></i><span style="padding-left: 10px;">Rule Book</span></h2>
+                <a target="_blank" href="docs/Tabletennis.pdf" class="btn btn-info btn-lg"
+                  style="margin:auto;display:table;">
+                  <i class="fas fa-download"></i> Download
+                </a>
+                <br>
+              </div>
+              <hr>
+              <div class="past-winner-div mod">
+                <h2><i class="fas fa-trophy"></i><span style="padding-left: 10px;">Past Winners</span></h2>
+                <h4 style="padding-left: 50px;">-</h4>
+              </div>
+              <hr>
+              <div class="contact-div mod">
+                <h2><i class="fas fa-address-book"></i><span style="padding-left: 10px;">Contacts</span></h2>
+                <div style="padding-left: 50px;">
+                  <h4>Vighanesh<br>
+                    +91-9796466366<br>
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScdCdHsOFxyeGAwegCtC1YkVPkvOweRRDImHptXLnVmynvGcA/viewform"
+              target="_blank"><button type="button" class="btn btn-success" id="reg_btn">Register</button></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Modal end of Basketball -->
+
+    <!-- Modal Start of Tt boys-->
+    <div id="tennis_b" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title text-center">Tennis (Boys)</h2>
+          </div>
+          <div class="modal-body">
+            <div class="main-model">
+              <div class="rule-div mod">
+                <h2><i class="fas fa-book"></i><span style="padding-left: 10px;">Rule Book</span></h2>
+                <a target="_blank" href="docs/Lawntennis.pdf" class="btn btn-info btn-lg"
+                  style="margin:auto;display:table;">
+                  <i class="fas fa-download"></i> Download
+                </a>
+                <br>
+              </div>
+              <hr>
+              <div class="past-winner-div mod">
+                <h2><i class="fas fa-trophy"></i><span style="padding-left: 10px;">Past Winners</span></h2>
+                <h4 style="padding-left: 50px;">-</h4>
+              </div>
+              <hr>
+              <div class="contact-div mod">
+                <h2><i class="fas fa-address-book"></i><span style="padding-left: 10px;">Contacts</span></h2>
+                <div style="padding-left: 50px;">
+                  <h4>Tejesh<br>
+                    +91-9121828374<br></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScdCdHsOFxyeGAwegCtC1YkVPkvOweRRDImHptXLnVmynvGcA/viewform"
+              target="_blank"><button type="button" class="btn btn-success" id="reg_btn">Register</button></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Modal end of Basketball -->
+
+    <!-- Modal Start of Volleyball Girls-->
+    <div id="volleyball_girls" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title text-center">Volley Ball (Girls)</h2>
+          </div>
+          <div class="modal-body">
+            <div class="main-model">
+              <div class="rule-div mod">
+                <h2><i class="fas fa-book"></i><span style="padding-left: 10px;">Rule Book</span></h2>
+                <a target="_blank" href="docs/Volleyball.pdf" class="btn btn-info btn-lg"
+                  style="margin:auto;display:table;">
+                  <i class="fas fa-download"></i> Download
+                </a>
+                <br>
+              </div>
+              <hr>
+              <div class="past-winner-div mod">
+                <h2><i class="fas fa-trophy"></i><span style="padding-left: 10px;">Past Winners</span></h2>
+                <h4 style="padding-left: 50px;">Chitkara Punjab<br>IIT Ropar<br>JUIT</h4>
+              </div>
+              <hr>
+              <div class="contact-div mod">
+                <h2><i class="fas fa-address-book"></i><span style="padding-left: 10px;">Contacts</span></h2>
+                <div style="padding-left: 50px;">
+                  <h4>Manpreet Kaur<br>
+                    +91-8872374649<br></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScdCdHsOFxyeGAwegCtC1YkVPkvOweRRDImHptXLnVmynvGcA/viewform"
+              target="_blank"><button type="button" class="btn btn-success" id="reg_btn">Register</button></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Modal end of Basketball -->
+
+    <!-- Modal Start of Tt boys-->
+    <div id="chess_" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title text-center">Chess</h2>
+          </div>
+          <div class="modal-body">
+            <div class="main-model">
+              <div class="rule-div mod">
+                <h2><i class="fas fa-book"></i><span style="padding-left: 10px;">Rule Book</span></h2>
+                <a target="_blank" href="docs/Chess.pdf" class="btn btn-info btn-lg" style="margin:auto;display:table;">
+                  <i class="fas fa-download"></i> Download
+                </a>
+                <br>
+              </div>
+              <hr>
+              <div class="past-winner-div mod">
+                <h2><i class="fas fa-trophy"></i><span style="padding-left: 10px;">Past Winners</span></h2>
+                <h4 style="padding-left: 50px;">IIT Ropar<br>MNIT Jaipur<br>Chitkara Punjab</h4>
+              </div>
+              <hr>
+              <div class="contact-div mod">
+                <h2><i class="fas fa-address-book"></i><span style="padding-left: 10px;">Contacts</span></h2>
+                <div style="padding-left: 50px;">
+                  <h4>Sailesh Khanna<br>
+                    +91-7009943006 <br></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScdCdHsOFxyeGAwegCtC1YkVPkvOweRRDImHptXLnVmynvGcA/viewform"
+              target="_blank"><button type="button" class="btn btn-success" id="reg_btn">Register</button></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Modal end of Basketball -->
+
+    <!-- Modal Start of Tt boys-->
+    <div id="basketball_girls" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title text-center">Basketball (Girls)</h2>
+          </div>
+          <div class="modal-body">
+            <div class="main-model">
+              <div class="rule-div mod">
+                <h2><i class="fas fa-book"></i><span style="padding-left: 10px;">Rule Book</span></h2>
+                <a target="_blank" href="docs/Basketball.pdf" class="btn btn-info btn-lg"
+                  style="margin:auto;display:table;">
+                  <i class="fas fa-download"></i> Download
+                </a>
+                <br>
+              </div>
+              <hr>
+              <div class="past-winner-div mod">
+                <h2><i class="fas fa-trophy"></i><span style="padding-left: 10px;">Past Winners</span></h2>
+                <h4 style="padding-left: 50px;">AKG Engineering College<br>JUIT<br>Chitkara HP</h4>
+              </div>
+              <hr>
+              <div class="contact-div mod">
+                <h2><i class="fas fa-address-book"></i><span style="padding-left: 10px;">Contacts</span></h2>
+                <div style="padding-left: 50px;">
+                  <h4>Mayank Raj<br>
+                    +91-90799350330<br></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScdCdHsOFxyeGAwegCtC1YkVPkvOweRRDImHptXLnVmynvGcA/viewform"
+              target="_blank"><button type="button" class="btn btn-success" id="reg_btn">Register</button></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Modal end of Basketball -->
+
+
+
+  </div>
+  <!-- Footer -->
+  <footer style="background-color: #212121;color: white;">
+    <div style="padding-left: 20px;padding-right: 20px;">
+      <div class="row" align="center">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <h3 style="color: white">External Links</h3>
+          <p><a href="http://www.iitrpr.ac.in/" style="color:white;">IIT Ropar Homepage</a><br><a
+              href="http://www.iitrpr.ac.in/about-iit" style="color:white;">About IIT Ropar</a><br><a
+              href="http://www.iitrpr.ac.in/location" style="color: white">Reaching IIT Ropar</p></a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <h3 style="color: white">Contact Us</h3>
+          <p>Jashan Sanger<br>Overall Coordinator<br>Phone: <a href="tel:+917986595456">+91-7986595456</a>, <a
+            href="tel:+919988069842">+91-9988069842</a><br>Email: <a
+            href="mailto:gs.sports@iitrpr.ac.in">gs.sports@iitrpr.ac.in</a></p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <h3 style="color: white;">Follow Us</h3>
+          <a href="https://www.facebook.com/aarohan.iitrpr/" target="_blank"><img src="img/fb.png" height="56px;"
+              style="margin-bottom: 10px;"></a>
+          &nbsp;
+
+          <a href="https://www.instagram.com/aarohan_iitropar/" target="_blank"><img src="img/Instagram.png"
+              height="56px;" style="margin-bottom: 10px;"></a>
+          <a href="https://www.youtube.com/channel/UC6VTz7XxzGHtQi5fWWgbO2A" target="_blank"><img src="img/yt.png"
+              height="56px;" style="margin-bottom: 10px;"></a>
+          &nbsp;
+          <br>
+          <iframe
+            src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Faarohan.iitrpr%2F&width=141&layout=button_count&action=like&size=large&show_faces=false&share=true&height=46&appId"
+            width="155" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+            allowTransparency="true"></iframe>
+        </div>
+      </div>
+    </div>
+    <div style="padding: 10px;">
+      Developed and maintained by <a href="mailto:softcom@iitrpr.ac.in">Software Community</a>, IIT Ropar
+    </div>
+  </footer>
+
+  <script>
+
+    $(document).on('click', '.navbar-collapse.in', function (e) {
+      if ($(e.target).is('a')) {
+        $(this).collapse('hide');
+      }
+    });
+  </script>
+</body>
+
+</html>

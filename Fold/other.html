@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>aa</title>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="jquery.wait.js"></script>
+        <link rel="stylesheet" href="other.css">
+    </head>
+    <body>
+    <div class="grid">
+        <div class="left-div" >
+            <img src="img/1_1.jpg" id="first-img" style="margin-top: 0x; float: right;">
+            <img src="img/2_1.jpg" id="third-img" height="350px" style=" width: 0%; margin-top: -350px; float: right;">
+            <img src="img/3_1.jpg" id="fifth-img" height="350px" style=" width: 0%; margin-top: -350px; float: right;">
+            <img src="img/4_1.jpg" id="seventh-img" height="350px" style=" width: 0%; margin-top: -350px; float: right;">
+            <img src="img/5_1.jpg" id="ninth-img" height="350px" style=" width: 0%; margin-top: -350px; float: right;">
+            <img src="img/6_1.jpg" id="eleventh-img" height="350px" style=" width: 0%; margin-top: -350px; float: right;">
+            <img src="img/8_1.jpg" id="thirteen-img" height="350px" style=" width: 0%; margin-top: -350px; float: right;">
+            <img src="img/7_1_up.jpg" id="fifteen-img"  style="width: 0%; height: 277px; margin-top: -277px; float: right;">
+            <img src="img/9_1.jpg" id="seventeen-img"  style="width: 0%; height: 350px; margin-top: -350px; float: right;">
+            <img src="img/10_1.jpg" id="ninteen-img"  style="width: 0%; height: 350px; margin-top: -350px; float: right;">
+            <img src="img/8_3.jpg" id="down1-img" style="height: 0px; width: 100%; margin-top: 0px; float: right;">
+            
+            
+            
+            <button type="button" class="prev" style="margin-top: 50px; " onclick="prevfn();">Prev</button>
+        </div>
+        <div class="right-div" >
+            <img src="img/10_2.jpg" id="twenty-img" height="350px" style=" float: left; margin-top: 0px;">
+            <img src="img/9_2.jpg" id="eighteen-img" height="350px" style=" float: left; margin-top: -350px;">
+            <img src="img/8_2.jpg" id="fourteen-img" height="350px" style=" float: left; margin-top: -350px;">
+            <img src="img/7_2_up.jpg" id="sixteen-img" style="width: 350px; height:277px; float: left; margin-top: -277px;">
+            
+            <img src="img/6_2.jpg" id="twelveth-img" height="350px" style=" float: left;margin-top: -350px;">
+            <img src="img/5_2.jpg" id="tenth-img" height="350px" style="  float: left;margin-top: -350px;">
+            <img src="img/4_2.jpg" id="eighth-img" height="350px" style=" float: left; margin-top: -350px;">
+            <img src="img/3_2.jpg" id="sixth-img" height="350px" style="  float: left;margin-top: -350px;">
+            <img src="img/2_2.jpg" id="forth-img" height="350px" style="  float: left;margin-top: -350px;">
+            <img src="img/1_2.jpg" id="second-img"   height="350px" style="width:100%; float: left; margin-top: -350px;">
+            <img src="img/8_4.jpg" id="down2-img" height="0px" style="width: 100%; float: left; margin-top: 0px;">
+            <button type="button" class="next" style="margin-top: 50px;" onclick="nextfn();">Next</button>
+        </div>
+        <!--<script type="text/javascript">
+            var i;
+            
+            for(i=0;i<10;i++){
+                var x=100-i*10;
+                document.getElementsByClassName("main-fold")[0].style.width=x+"%";
+                //setInterval(function(){alert("Hello")},3000);
+            }
+          
+        </script>-->
+        </div>
+        <script>
+            function squeeze(img_to_fold,lag){
+                for(i=1;i<=100;i++){
+                    //console.log("d");
+                  var x=(100-i);
+                    var stroo=x+"%";
+                  $( "#"+img_to_fold ).css("width","100%").wait(i*5+lag).css("width",stroo);
+                }
+            }
+            function open(img_to_fold,lag){
+                for(i=1;i<=100;i++){    
+                    var x=i;
+                    var stroo=x+"%";
+                  $( "#"+img_to_fold ).css("width","0%").wait(i*5+lag).css("width",stroo);
+                }
+            }
+            function squeezev(img_to_fold,lag){
+                console.log("dd");
+                for(i=1;i<=100;i++){
+                    //console.log("d");
+                  var x=(100-i);
+                    var stroo=x*2.77+"px";
+                  $( "#"+img_to_fold ).css("height","277px").wait(i*5+lag).css("height",stroo);
+                  $( "#"+img_to_fold ).css("margin-top","-277px").wait(i*5+lag).css("margin-top","-"+stroo);
+                }
+            }
+            function squeezev2(img_to_fold,lag){
+                console.log("dd");
+                for(i=1;i<=100;i++){
+                    //console.log("d");
+                  var x=(100-i);
+                    var stroo=x*2.77+"px";
+                  $( "#"+img_to_fold ).css("height","277px").wait(i*5+lag).css("height",stroo);
+                //  $( "#"+img_to_fold ).css("margin-top","-277px").wait(i*5+lag).css("margin-top","-"+stroo);
+                }
+            }
+            function openv(img_to_fold,lag){
+                for(i=1;i<=100;i++){    
+                    var x=i;
+                    var stroo=x*2.77+"px";
+                  $( "#"+img_to_fold ).css("height","0px").wait(i*5+lag).css("height",stroo);
+                }
+            }
+            function openv2(img_to_fold,lag){
+                for(i=1;i<=100;i++){    
+                    var x=i;
+                    var stroo=x*2.77+"px";
+                  $( "#"+img_to_fold ).css("height","0px").wait(i*5+lag).css("height",stroo);
+                  $( "#"+img_to_fold ).css("margin-top","0px").wait(i*5+lag).css("margin-top","-"+stroo);
+                }
+            }
+        </script>
+        <script>
+            var slide=1;
+            //var img_to_fold="first-img";
+            //squeeze("first-img");
+            function as1(){
+                squeeze("second-img",0);
+                open("third-img",490);
+                //squeeze("first-img",500);
+            }
+            function as2(){
+                squeeze("forth-img",0);
+                open("fifth-img",490);
+                //squeeze("first-img",500);
+            }
+            function as3(){
+                squeeze("sixth-img",0);
+                open("seventh-img",490);
+                //squeeze("first-img",500);
+            }
+            function as4(){
+                squeeze("eighth-img",0);
+                open("ninth-img",490);
+                //squeeze("first-img",500);
+            }
+            function as5(){
+                squeeze("tenth-img",0);
+                open("eleventh-img",490);
+                //squeeze("first-img",500);
+            }
+            function as6(){
+                squeeze("twelveth-img",0);
+                //squeeze("fourteen-img",0);
+                open("thirteen-img",490);
+                open("fifteen-img",490);
+            }
+            function as7(){
+                squeezev("fifteen-img",0);
+                squeezev("sixteen-img",0);
+                openv("down1-img",500);
+                openv("down2-img",500)
+                
+            }
+            function as8(){
+                squeezev2("down1-img",0);
+                squeezev2("down2-img",0);
+                openv2("fifteen-img",500);
+                openv2("sixteen-img",500);
+                
+            }
+            function as9(){
+                squeeze("fourteen-img",0);
+                squeeze("sixteen-img",0);
+                open("seventeen-img",500);
+                
+                
+            }
+            function as10(){
+                squeeze("eighteen-img",0);
+                open("ninteen-img",500);
+                
+            }
+            function callerfn1(){
+                if(slide==2)
+                    as1();
+                if(slide==3)
+                    as2();
+                if(slide==4)
+                    as3();
+                if(slide==5)
+                    as4();
+                if(slide==6)
+                    as5();
+                if(slide==7)
+                    as6();
+                if(slide==8)
+                    as7();
+                if(slide ==9)
+                    as8();
+                if(slide==10)
+                    as9();
+                if(slide==11)
+                    as10();
+                if(slide==12)
+                    as11();
+            }
+            function prevfn(){
+                slide=slide-1;
+                callerfn2();
+            }
+            function nextfn(){
+                slide=slide+1;
+                callerfn1();
+            }
+            
+            
+        </script>
+        
+    
+    </body>
+</html>

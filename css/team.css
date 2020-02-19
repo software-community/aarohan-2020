@@ -1,0 +1,64 @@
+.imgview{
+	position: relative;	
+	background-color: #212121;
+	color: white;
+	overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  opacity: 0.8;
+  color: black;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+  text-align:center;
+ 
+}
+
+.imgview .image:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.imgview .image{
+	position: relative;
+	
+
+}
+
+.text{
+	position: relative;
+	top: 20%;
+}
+
+
+.imgview .txt{
+	
+}
+
+
+
+
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 20px;
+}
+
+
+.fa-facebook {
+	
+  background: #3B5998;
+  color: white;
+}

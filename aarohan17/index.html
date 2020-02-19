@@ -1,0 +1,2922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="shortcut icon" href="img/icon_new.png" />
+	<title>AAROHAN | Annual Sports Day, IIT Ropar</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/index.js"></script>
+	<style>
+		.carousel-inner > .item > img,
+		.carousel-inner > .item > a > img {
+		width: 70%;
+		margin: auto;
+	}
+		#myBtn {
+	  display: none;
+	  position: fixed;
+	  bottom: 20px;
+	  right: 30px;
+	  z-index: 99;
+	  border: none;
+	  outline: none;
+	  background-color: red;
+	  color: white;
+	  cursor: pointer;
+	  padding: 15px;
+	  border-radius: 10px;
+	}
+
+	#myBtn:hover {
+	  background-color: #555;
+	}
+	</style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>                        
+			</button>
+			<a id="home_button" class="navbar-brand" href="javascript:void(0)">Home</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+				<li><a id="event_button" href="javascript:void(0)">Events</a></li>
+				<li><a id="result_button" href="javascript:void(0)">Results</a></li>
+				<li><a id="team_button" href="javascript:void(0)">Organising Team</a></li>
+				<li><a id="gallery_button" href="javascript:void(0)">Gallery</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a id="contact_button" data-toggle="modal" data-target="#contact_modal" href="javascript:void(0)">Contact Us</a></li>
+      </ul> 
+		</div>
+	</div>
+</nav>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<div class="container text-center" id="home_content">
+	<br><br>
+	<h1 style="font-size: 60px;">AAROHAN</h1>
+	<h4>Annual Sports Day, IIT Ropar</h4>
+	<img class="img-responsive center-block" src="img/logo.png" alt="Aarohan Cover Photo" >
+	<h2 align="center">presented by</h2>
+	<img class="img-responsive center-block" src="img/bosaa.png" alt="BoSA Cover Photo" align="center" style="max-height: 70%; width: auto;">
+	
+	<br><br>
+</div>
+
+<div class="container" id="event_content">
+	<br><br><br><br>
+	<div class="row">
+	    <div class="col-sm-3">
+	      <a id="BadmintonM_button1" href="javascript:void(0)"><img src="img/icon/badminton.png" class="img-responsive" alt="badminton" align="center" style="max-height: 180px;"></a>
+	     <h4><a id="BadmintonM_button" href="javascript:void(0)" class="btn btn-info btn-lg btn-block" style="align-items : center">Badminton (Boys)</a></h4>
+	      &nbsp;&nbsp;
+	    </div>
+	    <div class="col-sm-3">
+	      <a id="BadmintonW_button1" href="javascript:void(0)"><img src="img/icon/badmintonW.jpg" class="img-responsive" alt="badminton" align="center" style="max-height: 180px;"></a>
+	     <h4><a id="BadmintonW_button" href="javascript:void(0)" class="btn btn-info btn-lg btn-block" style="align-items : center">Badminton (Girls)</a></h4>
+	      &nbsp;&nbsp;
+	    </div>
+	    <div class="col-sm-3">
+	      <a id="Basketball_button1" href="javascript:void(0)"><img src="img/icon/basketball.ico" class="img-responsive" alt="basketbal" align="center" style="max-height: 180px;"></a>
+	     <h4><a id="Basketball_button" href="javascript:void(0)" class="btn btn-info btn-lg btn-block" style="align-items : center">Basketball</a></h4>
+	      &nbsp;&nbsp;
+	    </div>
+	    <div class="col-sm-3">
+	      <a id="Cricket_button1" href="javascript:void(0)"><img src="img/icon/cricket.png" class="img-responsive" alt="cricket" align="center" style="max-height: 180px;"></a>
+	     <h4><a id="Cricket_button" href="javascript:void(0)" class="btn btn-info btn-lg btn-block" style="align-items : center">Cricket</a></h4>
+	      &nbsp;&nbsp;
+	    </div>
+	</div>
+	<div class="row">
+	    <div class="col-sm-3">
+	      <a id="Football_button1" href="javascript:void(0)"><img src="img/icon/football.png" class="img-responsive" alt="football" align="center" style="max-height: 180px;"></a>
+	     <h4><a id="Football_button" href="javascript:void(0)" class="btn btn-info btn-lg btn-block" style="align-items : center">Football</a></h4>
+	      &nbsp;&nbsp;
+	    </div>
+	    <div class="col-sm-3">
+	      <a id="Lawn_button1" href="javascript:void(0)"><img src="img/icon/lawn_tennis.png" class="img-responsive" alt="lawn_tennis" align="center" style="max-height: 180px;"></a>
+	     <h4><a id="Lawn_button" href="javascript:void(0)" class="btn btn-info btn-lg btn-block" style="align-items : center">Lawn Tennis</a></h4>
+	      &nbsp;&nbsp;
+	    </div>
+	    <div class="col-sm-3">
+	      <a id="TableM_button1" href="javascript:void(0)"><img src="img/icon/table_tennis.png" class="img-responsive" alt="table_tennis" align="center" style="max-height: 180px;"></a>
+	     <h4><a id="TableM_button" href="javascript:void(0)" class="btn btn-info btn-lg btn-block" style="align-items : center">Table Tennis (Boys)</a></h4>
+	      &nbsp;&nbsp;
+	    </div>
+	    <div class="col-sm-3">
+	      <a id="TableW_button1" href="javascript:void(0)"><img src="img/icon/table_tennisW.png" class="img-responsive" alt="table_tennis" align="center" style="max-height: 180px;"></a>
+	     <h4><a id="TableW_button" href="javascript:void(0)" class="btn btn-info btn-lg btn-block" style="align-items : center">Table Tennis (Girls)</a></h4>
+	      &nbsp;&nbsp;
+	    </div>
+	</div>
+	<div class="row">
+	    <div class="col-sm-3">
+	      <a id="Volleyball_button1" href="javascript:void(0)"><img src="img/icon/volleyball.gif" class="img-responsive" alt="volleyball" align="center" style="max-height: 180px;">
+	     <h4><a id="Volleyball_button" href="javascript:void(0)" class="btn btn-info btn-lg btn-block" style="align-items : center">Volleyball (Boys)</a></h4>
+	      &nbsp;&nbsp;
+	    </div>
+		<div class="col-sm-3">
+	      <a id="VolleyballW_button1" href="javascript:void(0)"><img src="img/icon/volleyballW.png" class="img-responsive" alt="volleyball" align="center" style="max-height: 180px;">
+	     <h4><a id="VolleyballW_button" href="javascript:void(0)" class="btn btn-info btn-lg btn-block" style="align-items : center">Volleyball (Girls)</a></h4>
+	      &nbsp;&nbsp;
+	    </div>
+	</div>
+	<!--
+	<div class="list-group" id="event_list" style="font-size: 28px;">
+	  <a id="BadmintonM_button" href="javascript:void(0)" class="list-group-item">Badminton (Boys)</a>
+	  <a id="BadmintonW_button" href="javascript:void(0)" class="list-group-item">Badminton (Girls)</a>
+	  <a id="Basketball_button" href="javascript:void(0)" class="list-group-item">Basketball</a>
+	  <a id="Cricket_button" href="javascript:void(0)" class="list-group-item">Cricket</a>
+	  <a id="Football_button" href="javascript:void(0)" class="list-group-item">Football</a>
+	  <a id="Lawn_button" href="javascript:void(0)" class="list-group-item">Lawn Tennis</a>
+	  <a id="TableM_button" href="javascript:void(0)" class="list-group-item">Table Tennis (Boys)</a>
+	  <a id="TableW_button" href="javascript:void(0)" class="list-group-item">Table Tennis (Girls)</a>
+	  <a id="Volleyball_button" href="javascript:void(0)" class="list-group-item">Volleyball</a>
+	</div>
+	-->
+</div>
+
+<div class="container" id="BadmintonM_content">
+	<br><br><br><br>
+	<h1 align="center">Badminton</h1>
+	<p style="text-align:center;"><a href="doc/Badminton.pdf" target="_blank" class="btn btn-info btn-lg" role="button">Hit me for Rule Book of Badminton</a></p>
+	<div class="row"><hr style="height:1px;border:none;color:#333;background-color:#333;">
+    	<h2 align="center"> Teams Distribution</h2>
+    	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+		<div class="col-sm-6">
+			<h3>Pool A</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Team ID</th>
+					<th>College Name</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td >A1</td>
+						<td>IIT ROPAR A</td>
+					</tr>
+					<tr>
+						<td>A2</td>
+						<td>CHITKARA</td>
+					</tr>
+					<tr>
+						<td>A3</td>
+						<td>RGI Ropar</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-6">
+			<h3>Pool B</h3>
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+						<th>Team ID</th>
+						<th>College Name</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>B1</td>
+						<td>IIT ROPAR B</td>
+					</tr>
+					<tr>
+						<td>B2</td>
+						<td>IET BHADDAL</td>
+					</tr>
+					<tr>
+						<td>B3</td>
+						<td>JUIT</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<h2 align="center"> SCHEDULE</h2>
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<div class="row">
+		<div class="col-sm-6">
+			<h3>Day - 1</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Time</th>
+					<th>Team 1</th>
+					<th>Team 2</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td >08:00 AM</td>
+						<td >A1</td>
+						<td >A3</td>
+					</tr>
+					<tr>
+						<td >10:00 AM</td>
+						<td >B1</td>
+						<td >B2</td>
+					</tr>
+					<tr>
+						<td >01:00 PM</td>
+						<td >A2</td>
+						<td >A3</td>
+					</tr>
+					<tr>
+						<td >03:00 PM</td>
+						<td >B2</td>
+						<td >B3</td>
+					</tr>
+					<tr>
+						<td >07:00 PM</td>
+						<td >A1</td>
+						<td >A2</td>
+					</tr>
+					<tr>
+						<td >09:00 PM</td>
+						<td >B1</td>
+						<td >B3</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-6">
+			<h3>Day - 2</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Time</th>
+					<th>Team 1</th>
+					<th>Team 2</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td >08:00 AM</td>
+						<td >WIN(A)</td>
+						<td >RUN(B)</td>
+					</tr>
+					<tr>
+						<td >01:00 PM</td>
+						<td >RUN(A)</td>
+						<td >WIN(B)</td>
+					</tr>
+					<tr>
+						<td >05:00 PM</td>
+						<td >WIN(SEMI-1)</td>
+						<td >WIN(SEMI-2)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+<div class="container" id="BadmintonW_content">
+	<br><br><br><br>
+	<h1 align="center">Badminton</h1>
+	<p style="text-align:center;"><a href="doc/Badminton.pdf" target="_blank" class="btn btn-info btn-lg" role="button">Hit me for Rule Book of Badminton</a></p>
+	<div class="row"><hr style="height:1px;border:none;color:#333;background-color:#333;">
+    	<h2 align="center"> Teams Distribution</h2>
+    	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+		<div class="col-sm-12">
+			<h3>Pool C</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Team ID</th>
+					<th>College Name</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td >C1</td>
+						<td>IIT ROPAR</td>
+					</tr>
+					<tr>
+						<td>C2</td>
+						<td>RGI ROPAR</td>
+					</tr>
+					<tr>
+						<td>C3</td>
+						<td>JUIT</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<h2 align="center"> SCHEDULE</h2>
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<div class="row">
+		<div class="col-sm-6">
+			<h3>Day - 1</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Time</th>
+					<th>Team 1</th>
+					<th>Team 2</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td >05:00 PM</td>
+						<td >C1</td>
+						<td >C2</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-6">
+			<h3>Day - 2</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Time</th>
+					<th>Team 1</th>
+					<th>Team 2</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td >10:00 AM</td>
+						<td >C2</td>
+						<td >C3</td>
+					</tr>
+					<tr>
+						<td >03:00 PM</td>
+						<td >C1</td>
+						<td >C3</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+<div class="container" id="Basketball_content">
+	<br><br><br><br>
+	<h1 align="center">Basketball</h1>
+	<p style="text-align:center;"><a href="doc/Basketball.pdf" target="_blank" class="btn btn-info btn-lg" role="button">Hit me for Rule Book of Basketball</a></p>	
+	<div class="row"><hr style="height:1px;border:none;color:#333;background-color:#333;">
+    	<h2 align="center"> Teams Distribution</h2>
+    	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+		<div class="col-sm-6">
+			<h3>Pool A</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Team ID</th>
+					<th>College Name</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td >A1</td>
+						<td>RGI, ROPAR</td>
+					</tr>
+					<tr>
+						<td>A2</td>
+						<td>CHITKARA</td>
+					</tr>
+					<tr>
+						<td>A3</td>
+						<td>JUIT</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-6">
+			<h3>Pool B</h3>
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+						<th>Team ID</th>
+						<th>College Name</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>B1</td>
+						<td>IIT ROPAR</td>
+					</tr>
+					<tr>
+						<td>B2</td>
+						<td>IET BHADDAL</td>
+					</tr>
+					<tr>
+						<td>B3</td>
+						<td>IISER MOHALI</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<h2 align="center"> SCHEDULE</h2>
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<div class="row">
+		<div class="col-sm-6">
+			<h3>Day - 1</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Time</th>
+					<th>Team 1</th>
+					<th>Team 2</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td >08:00 AM</td>
+						<td >A1</td>
+						<td >A2</td>
+					</tr>
+					<tr>
+						<td >10:00 AM</td>
+						<td >B1</td>
+						<td >B2</td>
+					</tr>
+					<tr>
+						<td >01:00 PM</td>
+						<td >A2</td>
+						<td >A3</td>
+					</tr>
+					<tr>
+						<td >03:00 PM</td>
+						<td >B2</td>
+						<td >B3</td>
+					</tr>
+					<tr>
+						<td >05:00 PM</td>
+						<td >A3</td>
+						<td >A1</td>
+					</tr>
+					<tr>
+						<td >07:00 PM</td>
+						<td >B3</td>
+						<td >B1</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-6">
+			<h3>Day - 2</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Time</th>
+					<th>Team 1</th>
+					<th>Team 2</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td >08:00 AM</td>
+						<td >WIN(A)</td>
+						<td >RUN(B)</td>
+					</tr>
+					<tr>
+						<td >10:00 AM</td>
+						<td >RUN(A)</td>
+						<td >WIN(B)</td>
+					</tr>
+					<tr>
+						<td >05:00 PM</td>
+						<td >WIN(WIN(A),RUN(B))</td>
+						<td >WIN(WIN(B),RUN(A))</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+<div class="container" id="Cricket_content">
+	<br><br><br><br>
+	<h1 align="center">Cricket</h1>
+	<p style="text-align:center;"><a href="doc/Cricket.pdf" target="_blank" class="btn btn-info btn-lg" role="button">Hit me for Rule Book of Cricket</a></p>
+	<div class="row"><hr style="height:1px;border:none;color:#333;background-color:#333;">
+    	<h2 align="center"> Teams Distribution</h2>
+    	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+		<div class="col-sm-6">
+			<h3>Pool A</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Team ID</th>
+					<th>College Name</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td >A1</td>
+						<td>IIT Ropar (students)</td>
+					</tr>
+					<tr>
+						<td>A2</td>
+						<td>ITDC</td>
+					</tr>
+					<tr>
+						<td>A3</td>
+						<td>IIT Ropar (staff)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-6">
+			<h3>Pool B</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Team ID</th>
+					<th>College Name</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td >B1</td>
+						<td>JUIT</td>
+					</tr>
+					<tr>
+						<td>B2</td>
+						<td>Rayat Bahra</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<h2 align="center"> SCHEDULE</h2>
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<div class="row">
+		<div class="col-sm-6">
+			<h3>Day - 1</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Time</th>
+					<th>Team 1</th>
+					<th>Team 2</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td >08:00 AM</td>
+						<td >A1</td>
+						<td >A3</td>
+					</tr>
+					<tr>
+						<td >11:00 AM</td>
+						<td >B1</td>
+						<td >B2</td>
+					</tr>
+					<tr>
+						<td >02:00 PM</td>
+						<td >WIN(A1,A3)</td>
+						<td >A2</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-6">
+			<h3>Day - 2</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Time</th>
+					<th>Team 1</th>
+					<th>Team 2</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td >09:00 AM</td>
+						<td >RUN(A)</td>
+						<td >RUN(B)</td>
+					</tr>
+					<tr>
+						<td >01:00 PM</td>
+						<td >WIN(B1,B2)</td>
+						<td >WIN(WIN(A1,A3),A2)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<h4 align="center"> Note : All matches except final will be of 15 overs</h4>
+	<h4 align="center"> Final will be of 20 overs</h4>
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+</div>
+
+<div class="container" id="Football_content">
+	<br><br><br><br>
+	<h1 align="center">Football</h1>
+	<p style="text-align:center;"><a href="doc/Football.pdf" target="_blank" class="btn btn-info btn-lg" role="button">Hit me for Rule Book of Football</a></p>
+	<div class="row"><hr style="height:1px;border:none;color:#333;background-color:#333;">
+    	<h2 align="center"> Teams Distribution</h2>
+    	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+		<div class="col-sm-12">
+			<h3>Pool A</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Team ID</th>
+					<th>College Name</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td >A1</td>
+						<td>IIT Ropar</td>
+					</tr>
+					<tr>
+						<td>A2</td>
+						<td>IET BHADDAL</td>
+					</tr>
+					<tr>
+						<td>A3</td>
+						<td>JUIT</td>
+					</tr>
+					<tr>
+						<td>A4</td>
+						<td>RAYAT BAHRA</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<h2 align="center"> SCHEDULE</h2>
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<div class="row">
+		<div class="col-sm-6">
+			<h3>Day - 1</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Time</th>
+					<th>Team 1</th>
+					<th>Team 2</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td >09:00 AM</td>
+						<td >A1</td>
+						<td >A2</td>
+					</tr>
+					<tr>
+						<td >11:00 AM</td>
+						<td >A3</td>
+						<td >A4</td>
+					</tr>
+					<tr>
+						<td >04:00 PM</td>
+						<td >A4</td>
+						<td >A2</td>
+					</tr>
+					<tr>
+						<td >05:30 PM</td>
+						<td >A3</td>
+						<td >A1</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-6">
+			<h3>Day - 2</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Time</th>
+					<th>Team 1</th>
+					<th>Team 2</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td >09:00 AM</td>
+						<td >A1</td>
+						<td >A4</td>
+					</tr>
+					<tr>
+						<td >11:00 AM</td>
+						<td >A2</td>
+						<td >A3</td>
+					</tr>
+					<tr>
+						<td >05:00 PM</td>
+						<td >WIN(A)</td>
+						<td >RUN(A)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+<div class="container" id="Lawn_content">
+	<br><br><br><br>
+	<h1 align="center">Lawn Tennis</h1>
+	<p style="text-align:center;"><a href="doc/LawnTennis.pdf" target="_blank" class="btn btn-info btn-lg" role="button">Hit me for Rule Book of Lawn Tennis</a></p>
+	<div class="row"><hr style="height:1px;border:none;color:#333;background-color:#333;">
+    	<h2 align="center"> Teams Distribution</h2>
+    	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+		<div class="col-sm-12">
+			<h3>Pool A</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Team ID</th>
+					<th>College Name</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td >A1</td>
+						<td>IIT Ropar A</td>
+					</tr>
+					<tr>
+						<td>A2</td>
+						<td>IIT Ropar B</td>
+					</tr>
+					<tr>
+						<td>A3</td>
+						<td>IISER Mohali</td>
+					</tr>
+					<tr>
+						<td>A4</td>
+						<td>PEC University</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<h2 align="center"> SCHEDULE</h2>
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<div class="row">
+		<div class="col-sm-6">
+			<h3>Day - 1</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Time</th>
+					<th>Team 1</th>
+					<th>Team 2</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td >10:00 AM</td>
+						<td >A1</td>
+						<td >A4</td>
+					</tr>
+					<tr>
+						<td >01:00 PM</td>
+						<td >A2</td>
+						<td >A3</td>
+					</tr>
+					<tr>
+						<td >04:00 PM</td>
+						<td >A4</td>
+						<td >A3</td>
+					</tr>
+					<tr>
+						<td >07:00 PM</td>
+						<td >A1</td>
+						<td >A2</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-6">
+			<h3>Day - 2</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Time</th>
+					<th>Team 1</th>
+					<th>Team 2</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td >04:00 PM</td>
+						<td >WIN(A)</td>
+						<td >RUN(A)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<p> Note : All Matches will  consist of 2 singles and 1 doubles with order SINGLE, DOUBLE, SINGLE. League matches will be of single set. FINALS will be of 3 sets. In case if 2 teams won same number of league matches then team with higher ratio of (no. of games won/no. of games lost) will go into FINALS.</p>
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+</div>
+
+<div class="container" id="TableM_content">
+	<br><br><br><br>
+	<h1 align="center">Table Tennis</h1>
+	<p style="text-align:center;"><a href="doc/TableTennis.pdf" target="_blank" class="btn btn-info btn-lg" role="button">Hit me for Rule Book of Table Tennis</a></p>
+	<div class="row"><hr style="height:1px;border:none;color:#333;background-color:#333;">
+    	<h2 align="center"> Teams Distribution</h2>
+    	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+		<div class="col-sm-6">
+			<h3>Pool A</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Team ID</th>
+					<th>College Name</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td >A1</td>
+						<td>CHITKARA UNIVERSITY</td>
+					</tr>
+					<tr>
+						<td>A2</td>
+						<td>GOVT. CLG ROPAR</td>
+					</tr>
+					<tr>
+						<td>A3</td>
+						<td>ITDC</td>
+					</tr>
+					<tr>
+						<td>A4</td>
+						<td>JUIT</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-6">
+			<h3>Pool B</h3>
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+						<th>Team ID</th>
+						<th>College Name</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>B1</td>
+						<td>IISER MOHALI</td>
+					</tr>
+					<tr>
+						<td>B2</td>
+						<td>IIT ROPAR</td>
+					</tr>
+					<tr>
+						<td>B3</td>
+						<td>IET BHADDAL</td>
+					</tr>
+					<tr>
+						<td>B4</td>
+						<td>RGI, ROPAR</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<h2 align="center"> SCHEDULE</h2>
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<div class="row">
+		<div class="col-sm-4">
+			<h3>Day - 1, Table - 1</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Time</th>
+					<th>Team 1</th>
+					<th>Team 2</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td >08:00 AM</td>
+						<td >A1</td>
+						<td >A2</td>
+					</tr>
+					<tr>
+						<td >09:30 AM</td>
+						<td >A3</td>
+						<td >A4</td>
+					</tr>
+					<tr>
+						<td >01:30 PM</td>
+						<td >B1</td>
+						<td >B3</td>
+					</tr>
+					<tr>
+						<td >03:00 PM</td>
+						<td >B2</td>
+						<td >B4</td>
+					</tr>
+					<tr>
+						<td >06:00 PM</td>
+						<td ></td>
+						<td ></td>
+					</tr>
+					<tr>
+						<td >07:30 PM</td>
+						<td ></td>
+						<td ></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-4">
+			<h3>Day - 1, Table - 2</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Time</th>
+					<th>Team 1</th>
+					<th>Team 2</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td >08:00 AM</td>
+						<td >B1</td>
+						<td >B2</td>
+					</tr>
+					<tr>
+						<td >09:30 AM</td>
+						<td >B3</td>
+						<td >B4</td>
+					</tr>
+					<tr>
+						<td >01:30 PM</td>
+						<td >A1</td>
+						<td >A3</td>
+					</tr>
+					<tr>
+						<td >03:00 PM</td>
+						<td >A2</td>
+						<td >A4</td>
+					</tr>
+					<tr>
+						<td >06:00 PM</td>
+						<td >B1</td>
+						<td >B4</td>
+					</tr>
+					<tr>
+						<td >07:30 PM</td>
+						<td >B2</td>
+						<td >B3</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-4">
+			<h3>Day - 1, Table - 3</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Time</th>
+					<th>Team 1</th>
+					<th>Team 2</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td >08:00 AM</td>
+						<td ></td>
+						<td ></td>
+					</tr>
+					<tr>
+						<td >09:30 AM</td>
+						<td ></td>
+						<td ></td>
+					</tr>
+					<tr>
+						<td >01:30 PM</td>
+						<td ></td>
+						<td ></td>
+					</tr>
+					<tr>
+						<td >03:00 PM</td>
+						<td ></td>
+						<td ></td>
+					</tr>
+					<tr>
+						<td >06:00 PM</td>
+						<td >A1</td>
+						<td >A4</td>
+					</tr>
+					<tr>
+						<td >07:30 PM</td>
+						<td >A2</td>
+						<td >A3</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-6">
+			<h3>Day - 2, Table - 1</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Time</th>
+					<th>Team 1</th>
+					<th>Team 2</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td >08:00 AM</td>
+						<td >WIN(A)</td>
+						<td >RUN(B)</td>
+					</tr>
+					<tr>
+						<td >03:00 PM</td>
+						<td >WIN(WIN(A),RUN(B))</td>
+						<td >WIN(WIN(B),RUN(S))</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-6">
+			<h3>Day - 2, Table - 2</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Time</th>
+					<th>Team 1</th>
+					<th>Team 2</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td >08:00 AM</td>
+						<td >WIN(B)</td>
+						<td >RUN(A)</td>
+					</tr>
+					<tr>
+						<td >03:00 PM</td>
+						<td ></td>
+						<td ></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+<div class="container" id="TableW_content">
+	<br><br><br><br>
+	<h1 align="center">Table Tennis</h1>
+	<p style="text-align:center;"><a href="doc/TableTennis.pdf" target="_blank" class="btn btn-info btn-lg" role="button">Hit me for Rule Book of Table Tennis</a></p><hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<h2 align="center"> Teams Distribution</h2>
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<div class="row">
+		<div class="col-sm-12">
+			<h3>Pool C</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+		      		<th>Team ID</th>
+					<th>College Name</th>
+					</tr>
+		  		</thead>
+				<tbody>
+					<tr>
+						<td >C1</td>
+						<td>IIT ROPAR</td>
+					</tr>
+					<tr>
+						<td>C2</td>
+						<td>RGI, ROPAR</td>
+					</tr>
+					<tr>
+						<td>C3</td>
+						<td>JUIT</td>
+					</tr>
+					<tr>
+						<td>C4</td>
+						<td>GOVT. CLG. RPR</td>
+					</tr>
+					<tr>
+						<td>C5</td>
+						<td>IET BHADDAL</td>
+					</tr>
+					<tr>
+						<td>C6</td>
+						<td>CHITKARA</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<h2 align="center"> SCHEDULE</h2>
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<div class="row">
+		<div class="col-sm-4">
+			<h3>Day - 1, Table - 1</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Time</th>
+					<th>Team 1</th>
+					<th>Team 2</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td >08:00 AM</td>
+						<td ></td>
+						<td ></td>
+					</tr>
+					<tr>
+						<td >11:00 AM</td>
+						<td >C1</td>
+						<td >C3</td>
+					</tr>
+					<tr>
+						<td >04:30 PM</td>
+						<td >C5</td>
+						<td >C6</td>
+					</tr>
+					<tr>
+						<td >07:30 PM</td>
+						<td >C3</td>
+						<td >C4</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-4">
+			<h3>Day - 1, Table - 2</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Time</th>
+					<th>Team 1</th>
+					<th>Team 2</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td >08:00 AM</td>
+						<td ></td>
+						<td ></td>
+					</tr>
+					<tr>
+						<td >11:00 AM</td>
+						<td >C2</td>
+						<td >C5</td>
+					</tr>
+					<tr>
+						<td >04:30 PM</td>
+						<td >C1</td>
+						<td >C4</td>
+					</tr>
+					<tr>
+						<td >07:30 PM</td>
+						<td ></td>
+						<td ></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-4">
+			<h3>Day - 1, Table - 3</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Time</th>
+					<th>Team 1</th>
+					<th>Team 2</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td >08:00 AM</td>
+						<td >C1</td>
+						<td >C5</td>
+					</tr>
+					<tr>
+						<td >11:00 AM</td>
+						<td >C3</td>
+						<td >C6</td>
+					</tr>
+					<tr>
+						<td >04:30 PM</td>
+						<td >C2</td>
+						<td >C3</td>
+					</tr>
+					<tr>
+						<td >07:30 PM</td>
+						<td ></td>
+						<td ></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4">
+			<h3>Day - 2, Table - 1</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Time</th>
+					<th>Team 1</th>
+					<th>Team 2</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td >08:00 AM</td>
+						<td ></td>
+						<td ></td>
+					</tr>
+					<tr>
+						<td >01:30 PM</td>
+						<td >C2</td>
+						<td >C6</td>
+					</tr>
+					<tr>
+						<td >04:30 PM</td>
+						<td ></td>
+						<td ></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-4">
+			<h3>Day - 2, Table - 2</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Time</th>
+					<th>Team 1</th>
+					<th>Team 2</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td >01:30 PM</td>
+						<td >C4</td>
+						<td >C5</td>
+					</tr>
+					<tr>
+						<td >11:00 AM</td>
+						<td >C2</td>
+						<td >C5</td>
+					</tr>
+					<tr>
+						<td >04:30 PM</td>
+						<td >C4</td>
+						<td >C6</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-4">
+			<h3>Day - 2, Table - 3</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Time</th>
+					<th>Team 1</th>
+					<th>Team 2</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td >09:30 AM</td>
+						<td >C3</td>
+						<td >C5</td>
+					</tr>
+					<tr>
+						<td >01:30 PM</td>
+						<td ></td>
+						<td ></td>
+					</tr>
+					<tr>
+						<td >04:30 PM</td>
+						<td ></td>
+						<td ></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+<div class="container" id="Volleyball_content">
+	<br><br><br><br>
+	<h1 align="center">Volleyball Boys</h1>
+	<p style="text-align:center;"><a href="doc/Volleyball.pdf" target="_blank" class="btn btn-info btn-lg" role="button">Hit me for Rule Book of Volleyball</a></p>
+	<h2 align="center"> Teams Distribution</h2>
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<div class="row">
+		<div class="col-sm-6">
+			<h3>Pool A</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+		      		<th>Team ID</th>
+					<th>College Name</th>
+					</tr>
+		  		</thead>
+				<tbody>
+					<tr>
+						<td >A1</td>
+						<td>IIT Ropar</td>
+					</tr>
+					<tr>
+						<td>A2</td>
+						<td>JUIT</td>
+					</tr>
+					<tr>
+						<td>A3</td>
+						<td>IISER Mohali</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-6">
+			<h3>Pool B</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+		      		<th>Team ID</th>
+					<th>College Name</th>
+					</tr>
+		  		</thead>
+				<tbody>
+					<tr>
+						<td >B1</td>
+						<td>IET Bhaddal</td>
+					</tr>
+					<tr>
+						<td>B2</td>
+						<td>IIT Mandi</td>
+					</tr>
+					<tr>
+						<td>B3</td>
+						<td>RGI</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<h2 align="center"> SCHEDULE</h2>
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<div class="row">
+		<div class="col-sm-6">
+			<h3>Day - 1</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Time</th>
+					<th>Team 1</th>
+					<th>Team 2</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td >08:00 AM</td>
+						<td>A1</td>
+						<td>A2</td>
+					</tr>
+					<tr>
+						<td >10:30 AM</td>
+						<td >B1</td>
+						<td >B2</td>
+					</tr>
+					<tr>
+						<td >02:00 PM</td>
+						<td >A1</td>
+						<td >A3</td>
+					</tr>
+					<tr>
+						<td >03:30 PM</td>
+						<td >B1</td>
+						<td >B3</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-6">
+			<h3>Day - 2</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Time</th>
+					<th>Team 1</th>
+					<th>Team 2</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td>08:00 AM</td>
+						<td>A2</td>
+						<td>A3</td>
+					</tr>
+					<tr>
+						<td>10:30 AM</td>
+						<td>B2</td>
+						<td>B3</td>
+					</tr>
+					<tr>
+						<td>04:00 PM</td>
+						<td>WIN(A)</td>
+						<td>WIN(B)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+<div class="container" id="VolleyballW_content">
+	<br><br><br><br>
+	<h1 align="center">Volleyball Girls</h1>
+	<p style="text-align:center;"><a href="doc/Volleyball.pdf" target="_blank" class="btn btn-info btn-lg" role="button">Hit me for Rule Book of Volleyball</a></p>
+	<h2 align="center"> Teams Distribution</h2>
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<div class="row">
+		<div class="col-sm-12">
+			<h3>Pool C</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+		      		<th>Team ID</th>
+					<th>College Name</th>
+					</tr>
+		  		</thead>
+				<tbody>
+					<tr>
+						<td >C1</td>
+						<td>IIT Ropar</td>
+					</tr>
+					<tr>
+						<td>C2</td>
+						<td>JUIT</td>
+					</tr>
+					<tr>
+						<td>C3</td>
+						<td>RGI</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<h2 align="center"> SCHEDULE</h2>
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<div class="row">
+		<div class="col-sm-6">
+			<h3>Day - 1</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Time</th>
+					<th>Team 1</th>
+					<th>Team 2</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td >12:00 PM</td>
+						<td>C1</td>
+						<td>C2</td>
+					</tr>
+					<tr>
+						<td >03:30 PM</td>
+						<td >C2</td>
+						<td >C3</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-6">
+			<h3>Day - 2</h3>  
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+	          		<th>Time</th>
+					<th>Team 1</th>
+					<th>Team 2</th>
+					</tr>
+	      		</thead>
+				<tbody>
+					<tr>
+						<td>12:00 PM</td>
+						<td>C1</td>
+						<td>C3</td>
+					</tr>
+					<tr>
+						<td>02:00 PM</td>
+						<td>WIN(C)</td>
+						<td>RUN(C)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+<div class="container" id="result_content">
+	<br><br><br><br>
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<h1 align="center">WINNERS </h1>
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<div class="row">
+		<div class="col-sm-12">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Sport</th>
+						<th>Winner</th>
+						<th>Runner-up</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Badminton(Boys)</td>
+						<td>Chitkara</td>
+						<td>IIT Ropar A</td>
+					</tr>
+					<tr>
+						<td>Badminton(Girls)</td>
+						<td>RGI Ropar</td>
+						<td>JUIT</td>
+					</tr>
+					<tr>
+						<td>Basketball</td>
+						<td>Chitkara</td>
+						<td>JUIT</td>
+					</tr>
+					<tr>
+						<td>Cricket</td>
+						<td>JUIT</td>
+						<td>IIT Ropar Students</td>
+					</tr>
+					<tr>
+						<td>Football</td>
+						<td>Rayat Bahra</td>
+						<td>IIT Ropar</td>
+					</tr>
+					<tr>
+						<td>Lawn-Tennis</td>
+						<td>PEC University</td>
+						<td>IIT Ropar B</td>
+					</tr>
+					<tr>
+						<td>Table-Tennis Singles(Boys)</td>
+						<td>Rayat Bahra</td>
+						<td>IIT Ropar</td>
+					</tr>
+					<tr>
+						<td>Table-Tennis Singles(Girls)</td>
+						<td>Rayat Bahra</td>
+						<td>Govt. College Ropar</td>
+					</tr>
+					<tr>
+						<td>Table-Tennis Team(Boys)</td>
+						<td>Chitkara</td>
+						<td>IIT Ropar</td>
+					</tr>
+					<tr>
+						<td>Table-Tennis Team(Girls)</td>
+						<td>Govt. College Ropar</td>
+						<td>IIT Ropar</td>
+					</tr>
+					<tr>
+						<td>Volleyball (Boys)</td>
+						<td>IIT Mandi</td>
+						<td>IET Bhaddal</td>
+					</tr>
+					<tr>
+						<td>Volleyball (Girls)</td>
+						<td>IIT Ropar</td>
+						<td>JUIT</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<!--
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<h2 align="center">Day 2 Matches considering Day 1's Result </h2>
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<div class="row">
+		<div class="col-sm-4">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Badminton (Boys)</th>
+					</tr>
+				</thead>
+				<thead>
+					<tr>
+						<th>Time</th>
+						<th>Teams</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>09:00 A.M.</td>
+						<td>Chitkara V/S IIT Ropar B</td>
+					</tr>
+					<tr>
+						<td>01:00 P.M.</td>
+						<td>JUIT V/S IIT Ropar A</td>
+					</tr>
+					<tr>
+						<td>05:00 P.M.</td>
+						<td>Final</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-4">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Badminton (Girls)</th>
+					</tr>
+				</thead>
+				<thead>
+					<tr>
+						<th>Time</th>
+						<th>Teams</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>10:00 A.M.</td>
+						<td>RGI Ropar V/S JUIT</td>
+					</tr>
+					<tr>
+						<td>03:00 P.M.</td>
+						<td>IIT Ropar V/S JUIT</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-4">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Basketball</th>
+					</tr>
+				</thead>
+				<thead>
+					<tr>
+						<th>Time</th>
+						<th>Teams</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>10:00 A.M.</td>
+						<td>IIT Ropar V/S JUIT</td>
+					</tr>
+					<tr>
+						<td>11:00 A.M.</td>
+						<td>Chitkara V/S IISER Mohali</td>
+					</tr>
+					<tr>
+						<td>05:00 P.M.</td>
+						<td>FINAL</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Cricket</th>
+					</tr>
+				</thead>
+				<thead>
+					<tr>
+						<th>Time</th>
+						<th>Teams</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>09:00 A.M.</td>
+						<td>IIT Ropar Staff V/S Rayat Bahra</td>
+					</tr>
+					<tr>
+						<td>01:00 P.M.</td>
+						<td>IIT Ropar Students V/S JUIT (FINAL)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-4">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Football</th>
+					</tr>
+				</thead>
+				<thead>
+					<tr>
+						<th>Time</th>
+						<th>Teams</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>10:00 A.M.</td>
+						<td>IIT Ropar V/S IET Bhaddal</td>
+					</tr>
+					<tr>
+						<td>11:30 A.M.</td>
+						<td>JUIT V/S Rayat Bahra</td>
+					</tr>
+					<tr>
+						<td>05:30 P.M.	</td>
+						<td>FINAL</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-4">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Lawn Tennis</th>
+					</tr>
+				</thead>
+				<thead>
+					<tr>
+						<th>Visit Event Section</th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Table Tennis(Boys)</th>
+					</tr>
+				</thead>
+				<thead>
+					<tr>
+						<th>Visit Event Section</th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+		<div class="col-sm-4">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Table Tennis(Girls)</th>
+					</tr>
+				</thead>
+				<thead>
+					<tr>
+						<th>Visit Event Section</th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+		<div class="col-sm-4">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Volleyball (Boys)</th>
+					</tr>
+				</thead>
+				<thead>
+					<tr>
+						<th>Time</th>
+						<th>Teams</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>09:30 A.M.</td>
+						<td>IISER Mohali vs JUIT</td>
+					</tr>
+					<tr>
+						<td>10:30 A.M.</td>
+						<td>IIT Mandi vs RGI</td>
+					</tr>
+					<tr>
+						<td>12:00 P.M.</td>
+						<td>Semifinal 1</td>
+					</tr>
+					<tr>
+						<td>02:00 P.M.</td>
+						<td>Semifinal 2</td>
+					</tr>
+					<tr>
+						<td>04:30 P.M.</td>
+						<td>FINAL</td>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	-->
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<h1 align="center">Day 1 Results </h1>
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<div class="row">
+		<div class="col-sm-4">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Badminton (Boys)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>IIT Ropar A won against Rayat Bahra(3-0)</td>
+					</tr>
+					<tr>
+						<td>IIT Ropar B won against IISER Mohali(3-0)</td>
+					</tr>
+					<tr>
+						<td>Chitkara won against RGI Ropar(3-0)</td>
+					</tr>
+					<tr>
+						<td>JUIT won against IISER Mohali(3-0)</td>
+					</tr>
+					<tr>
+						<td>Chitkara won against IIT Ropar A(3-0)</td>
+					</tr>
+					<tr>
+						<td>JUIT won against IIT Ropar B(3-1)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-4">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Badminton (Girls)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>RGI Ropar won against IIT Ropar(2-0)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-4">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Basketball</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Chitkara won against RGI Ropar</td>
+					</tr>
+					<tr>
+						<td>IIT Ropar anounced winner(IET Bhaddal absent)</td>
+					</tr>
+					<tr>
+						<td>JUIT won against Chitkara</td>
+					</tr>
+					<tr>
+						<td>IISER Mohali won against IIT Ropar</td>
+					</tr>
+					<tr>
+						<td>JUIT won against RGI Ropar</td>
+					</tr>
+					<tr>
+						<td>IISER Mohali anounced winner(IET Bhaddal absent)</td>
+					</tr>
+					
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Cricket</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>IIT Ropar Students won against IIT Ropar Staff</td>
+					</tr>
+					<tr>
+						<td>JUIT won against Rayat Bahra</td>
+					</tr>
+					<tr>
+						<td>IIT Ropar Students won against ITDC</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-4">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Football</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>IIT Ropar VS JUIT (2-2)</td>
+					</tr>
+					<tr>
+						<td>IET Bhaddal VS Rayat Bahra(2-2)</td>
+					</tr>
+					<tr>
+						<td>JUIT VS IET Bhaddal(0-0)</td>
+					</tr>
+					<tr>
+						<td>IIT Ropar VS Rayat Bahra(0-0)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-4">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Lawn Tennis</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>PEC University won against IIT Ropar A</td>
+					</tr>
+					<tr>
+						<td>PEC University won against IISER Mohali</td>
+					</tr>
+					<tr>
+						<td>IIT Ropar B V/S IISER Mohali(Postponded)</td>
+					</tr>
+					<tr>
+						<td>IIT Ropar A V/S IIT Ropar B(Postponded)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Table Tennis(Boys)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Chitkara won against Govt. College Ropar(3-0)</td>
+					</tr>
+					<tr>
+						<td>Chitkara won against ITDC(3-0)</td>
+					</tr>
+					<tr>
+						<td>Chitkara won against JUIT(3-0)</td>
+					</tr>
+					<tr>
+						<td>ITDC won against Govt. College Ropar(3-0)</td>
+					</tr>
+					<tr>
+						<td>JUIT won against Govt. College Ropar(3-0)</td>
+					</tr>
+					<tr>
+						<td>JUIT won against ITDC(3-0)</td>
+					</tr>
+					<tr>
+						<td>IIT Ropar won against IISER Mohali(3-0)</td>
+					</tr>
+					<tr>
+						<td>IISER Mohali won against IET Bhaddal(3-0)</td>
+					</tr>
+					<tr>
+						<td>IISER Mohali won against RGI Ropar(3-2)</td>
+					</tr>
+					<tr>
+						<td>IIT Ropar won against IET Bhaddal(3-0)</td>
+					</tr>
+					<tr>
+						<td>IIT Ropar won against RGI Ropar(3-1)</td>
+					</tr>
+					<tr>
+						<td>RGI Ropar won against IET Bhaddal(3-0)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-4">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Table Tennis(Girls)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>IIT Ropar won against JUIT(2-0)</td>
+					</tr>
+					<tr>
+						<td>IIT Ropar won against IET Bhaddal(2-0)</td>
+					</tr>
+					<tr>
+						<td>IIT Ropar won against Chitkara(2-1)</td>
+					</tr>
+					<tr>
+						<td>Govt. College Ropar won against RGI Ropar(2-1)</td>
+					</tr>
+					<tr>
+						<td>RGI Ropar won against IET Bhaddal(2-0)</td>
+					</tr>
+					<tr>
+						<td>Govt. College Ropar won against JUIT(2-1)</td>
+					</tr>
+					<tr>
+						<td>JUIT won against IET Bhaddal(2-0)</td>
+					</tr>
+					<tr>
+						<td>Govt. College Ropar won against IET Bhaddal(2-0)</td>
+					</tr>
+					<tr>
+						<td>Govt. College Ropar won against Chitkara(2-0)</td>
+					</tr>
+					<tr>
+						<td>Chitkara won against IET Bhaddal(2-0)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-4">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Volleyball (Boys)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>IIT Mandi beats IET Bhaddal by (2-1)</td>
+					</tr>
+					<tr>
+						<td>IIT Ropar beats JUIT by (2-1)</td>
+					</tr>
+					<tr>
+						<td>IET Bhaddal beats RGI by (2-0)</td>
+					</tr>
+					<tr>
+						<td>IIT Ropar beats IISER Mohali by (2-0)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Volleyball (Girls)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>IIT Ropar beats JUIT by 2-1</td>
+					</tr>
+					<tr>
+						<td>IIT Ropar beats RGI by 2-0</td>
+					</tr>
+					<tr>
+						<td>JUIT beats RGI by 2-0</td>
+					</tr>
+					<tr>
+						<td>Finals IIT Ropar beats JUIT by 2-0</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<h1 align="center">Day 2 Results </h1>
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<div class="row">
+		<div class="col-sm-4">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Badminton (Boys)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Chitkara won against IIT Ropar B(3-0)</td>
+					</tr>
+					<tr>
+						<td>IIT Ropar A won against JUIT(3-0)</td>
+					</tr>
+					<tr>
+						<td>Chitkara won against IIT Ropar A(3-0)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-4">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Badminton (Girls)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>RGI Ropar won against JUIT(2-0)</td>
+					</tr>
+					<tr>
+						<td>JUIT won against IIT Ropar(2-0)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-4">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Basketball</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>JUIT won against IIT Ropar</td>
+					</tr>
+					<tr>
+						<td>Chitkara won against IISER Mohali</td>
+					</tr>
+					<tr>
+						<td>Chitkara won against JUIT</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Cricket</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Rayat Bahra won against IIT Ropar Staff(51 runs)</td>
+					</tr>
+					<tr>
+						<td>JUIT won against IIT Ropar(7 wickets)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-4">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Football</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>IIT Ropar VS IET Bhaddal (1-0)</td>
+					</tr>
+					<tr>
+						<td>Juit vs Rayat Bahra(0-1)</td>
+					</tr>
+					<tr>
+						<td>IIT Ropar vs Rayat bahra(1-2)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-4">
+			<table class="table">
+				<thead>
+				</thead>
+				<tbody>
+					<tr>
+						<th>Lawn Tennis</th>
+					</tr>
+					<tr>
+						<td>IIT Ropar B won against IISER Mohali</td>
+					</tr>
+					<tr>
+						<td>IIT Ropar B won against IIT Ropar A</td>
+					</tr>
+					<tr>
+						<td>PEC University won against IIT Ropar B</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Table Tennis(Boys)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>IIT Ropar won against JUIT (3-0)</td>
+					</tr>
+					<tr>
+						<td>Chitkara won against IISER Mohali (3-0)</td>
+					</tr>
+					<tr>
+						<td>Chitkara won against IIT Ropar(3-2)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-4">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Table Tennis(Girls)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>IIT Ropar won against RGI Ropar(2-1)</td>
+					</tr>
+					<tr>
+						<td>Govt. College Ropar won against IIT Ropar(2-0)</td>
+					</tr>
+					<tr>
+						<td>RGI Ropar won against JUIT(2-0)</td>
+					</tr>
+					<tr>
+						<td>Chitkara won against RGI Ropar(2-1)</td>
+					</tr>
+					<tr>
+						<td>JUIT won against Chitkara(2-0)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-4">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Volleyball (Boys)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>JUIT won against IISER Mohali (2-0)</td>
+					</tr>
+					<tr>
+						<td>IIT Mandi won against RGI (2-1)</td>
+					</tr>
+					<tr>
+						<td>IET Bhaddal won against IIT Ropar (2-1)</td>
+					</tr>
+					<tr>
+						<td>IIT Mandi won against JUIT (2-0)</td>
+					</tr>
+					<tr>
+						<td>IIT Mandi won against IET Bhaddal (3-0)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+
+<!--
+<div class="container" id="result_content" style="">
+	<br><br><br><br>
+	<h3 align=center>WILL BE UPDATED SOON</h3>
+	<div class="row">
+		<hr style="height:1px;border:none;color:#333;background-color:#333;">
+		<h2 align="center">BASKETBALL</h2>
+		<hr style="height:1px;border:none;color:#333;background-color:#333;">
+		<div class="col-sm-6">
+			<h3>Pool A</h3>        
+			<div class="table-responsive">          
+				<table class="table">
+					<thead>
+						<tr>
+							<th>X</th>
+							<th>A1</th>
+							<th>A2</th>
+							<th>A3</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>A1</td>
+							<td>X</td>
+							<td> </td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td>A2</td>
+							<td> </td>
+							<td>X</td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td>A3</td>
+							<td> </td>
+							<td> </td>
+							<td>X</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<h3>Pool B</h3>        
+			<div class="table-responsive">          
+				<table class="table">
+					<thead>
+						<tr>
+							<th>X</th>
+							<th>B1</th>
+							<th>B2</th>
+							<th>B3</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>B1</td>
+							<td>X</td>
+							<td> </td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td>B2</td>
+							<td> </td>
+							<td>X</td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td>B3</td>
+							<td> </td>
+							<td> </td>
+							<td>X</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<hr style="height:1px;border:none;color:#333;background-color:#333;">
+		<h2 align="center">TABLE TENNIS (BOYS)</h2>
+		<hr style="height:1px;border:none;color:#333;background-color:#333;">
+		<div class="col-sm-6">
+			<h3>Pool A</h3>        
+			<div class="table-responsive">          
+				<table class="table">
+					<thead>
+						<tr>
+							<th>X</th>
+							<th>A1</th>
+							<th>A2</th>
+							<th>A3</th>
+							<th>A4</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>A1</td>
+							<td>X</td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td>A2</td>
+							<td> </td>
+							<td>X</td>
+							<td> </td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td>A3</td>
+							<td> </td>
+							<td> </td>
+							<td>X</td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td>A4</td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td>X </td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<h3>Pool B</h3>        
+			<div class="table-responsive">          
+				<table class="table">
+					<thead>
+						<tr>
+							<th>X</th>
+							<th>B1</th>
+							<th>B2</th>
+							<th>B3</th>
+							<th>B4</th>
+						</tr>
+					</thead>
+				<tbody>
+					<tr>
+						<td>B1</td>
+						<td>X</td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+					</tr>
+					<tr>
+						<td>B2</td>
+						<td> </td>
+						<td>X</td>
+						<td> </td>
+						<td> </td>
+					</tr>
+					<tr>
+						<td>B3</td>
+						<td> </td>
+						<td> </td>
+						<td>X</td>
+						<td> </td>
+					</tr>
+					<tr>
+						<td>B4</td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td>X </td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+  </div>
+  <div class="row">
+		<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<h2 align="center">TABLE TENNIS (GIRLS)</h2>
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+	<div class="col-sm-12">
+		<h3>Pool C</h3>        
+		<div class="table-responsive">          
+			<table class="table">
+				<thead>
+					<tr>
+						<th>X</th>
+						<th>C1</th>
+						<th>C2</th>
+						<th>C3</th>
+						<th>C4</th>
+						<th>C5</th>
+						<th>C6</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>C1</td>
+						<td>X</td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+					</tr>
+					<tr>
+						<td>C2</td>
+						<td> </td>
+						<td>X</td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+					</tr>
+					<tr>
+						<td>C3</td>
+						<td> </td>
+						<td> </td>
+						<td>X</td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+					</tr>
+					<tr>
+						<td>C4</td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td>X </td>
+						<td> </td>
+						<td> </td>
+					</tr>
+					<tr>
+						<td>C5</td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td>X</td>
+						<td> </td>
+					</tr>
+					<tr>
+						<td>C6</td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td>X</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+  </div>
+</div>
+-->
+<div class="container" id="team_content">
+	<br><br>
+		<hr>
+	<div class="row">
+	    <div class="col-sm-3">
+	      <img src="img/profile/preetam.jpg" class="img-responsive" alt="Preetam Kumar" max-width="220">
+	      <h2>Preetam Kumar</h2>
+	      <h4 style="color:gray;">Coordinator</h4><a href="https://www.facebook.com/preetam685" target=_blank><i class="fa fa-facebook-square" style="font-size:24px"></i></a>
+	      <a href="mailto:sports.secy@iitrpr.ac.in" target=_blank><i class="fa fa-envelope" style="font-size:24px"></i></a>  
+	      <h4>+91-9646456040</h4>
+	      <h4>sports.secy@iitrpr.ac.in</h4>
+	      &nbsp;&nbsp;
+	    </div>
+	    <div class="col-sm-3">
+	      <img src="img/profile/sandeep.jpg" class="img-responsive" alt="Sandeep Saini" max-width="220">
+	      <h2>Sandeep Saini</h2>
+	      <h4 style="color:gray;">Hospitality Organiser</h4><a href="https://www.facebook.com/sandeep.bagdi.545" target=_blank><i class="fa fa-facebook-square" style="font-size:24px"></i></a> 
+	      <a href="mailto:2015meb1114@iitrpr.ac.in" target=_blank><i class="fa fa-envelope" style="font-size:24px"></i></a>  
+	      <h4>+91-9517729297</h4>
+	      <h4>2015meb1114@iitrpr.ac.in</h4>
+	      &nbsp;&nbsp;
+	    </div>
+	    <div class="col-sm-3">
+	      <img src="img/profile/rishabh.jpg" class="img-responsive" alt="Rishabh Anchalia" max-width="220">
+	      <h2>Rishabh Anchalia </h2>
+	      <h4 style="color:gray;">Travel and Transport Organiser</h4><a href="https://www.facebook.com/rishabh.anchalia.35" target=_blank><i class="fa fa-facebook-square" style="font-size:24px"></i></a>
+	      <a href="mailto:2015meb1106@iitrpr.ac.in" target=_blank><i class="fa fa-envelope" style="font-size:24px"></i></a>
+	      <h4>+91-9781765307</h4>
+	      <h4>2015meb1106@iitrpr.ac.in</h4>
+	      &nbsp;&nbsp;
+	    </div>
+	    <div class="col-sm-3">
+	      <img src="img/profile/gaurav.jpeg" class="img-responsive" alt="Gaurav Kumar" max-width="220">
+	      <h2>Gaurav Kumar</h2>
+	      <h4 style="color:gray;">Badminton (Boys) Organiser</h4><a href="https://www.facebook.com/shane.watt.146" target=_blank><i class="fa fa-facebook-square" style="font-size:24px"></i></a>
+	      <a href="mailto:2015meb1093@iitrpr.ac.in" target=_blank><i class="fa fa-envelope" style="font-size:24px"></i></a>
+	      <h4>+91-9888934109</h4>
+	      <h4>2015meb1093@iitrpr.ac.in</h4>
+	      &nbsp;&nbsp;
+	    </div>
+	</div>
+	<div class="row">
+	    <div class="col-sm-3">
+	      <img src="img/profile/diksha.jpg" class="img-responsive" alt="Diksha Bansal" max-width="220">
+	      <h2>Diksha Bansal</h2>
+	      <h4 style="color:gray;">Badminton (Girls) Organiser</h4><a href="https://www.facebook.com/bansaldiksha.29" target=_blank><i class="fa fa-facebook-square" style="font-size:24px"></i></a>
+      	  <a href="mailto:2016eeb1074@iitrpr.ac.in" target=_blank><i class="fa fa-envelope" style="font-size:24px"></i></a>  
+	      <h4>+91-7340901480</h4>
+	      <h4>2016eeb1074@iitrpr.ac.in</h4>
+	      &nbsp;&nbsp;
+	    </div>
+	    <div class="col-sm-3">
+	      <img src="img/profile/rishabh.jpg" class="img-responsive" alt="Rishabh Anchalia" max-width="220">
+	      <h2>Rishabh Anchalia </h2>
+	      <h4 style="color:gray;">Basketball Organiser</h4><a href="https://www.facebook.com/rishabh.anchalia.35" target=_blank><i class="fa fa-facebook-square" style="font-size:24px"></i></a>
+	      <a href="mailto:2015meb1106@iitrpr.ac.in" target=_blank><i class="fa fa-envelope" style="font-size:24px"></i></a>
+	      <h4>+91-9781765307</h4>
+	      <h4>2015meb1106@iitrpr.ac.in</h4>
+	      &nbsp;&nbsp;
+	    </div>
+	    <div class="col-sm-3">
+	      <img src="img/profile/jp.jpg" class="img-responsive" alt="Jyoti Prakash Amit" max-width="220">
+	      <h2>Jyoti Prakash Amit</h2>
+	      <h4 style="color:gray;">Cricket Organiser</h4><a href="https://www.facebook.com/jp.amit" target=_blank><i class="fa fa-facebook-square" style="font-size:24px"></i></a> 
+      	  <a href="mailto:2015eeb1056@iitrpr.ac.in" target=_blank><i class="fa fa-envelope" style="font-size:24px"></i></a>
+	      <h4>+91-7307774387</h4>
+	      <h4>2015eeb1056@iitrpr.ac.in</h4>
+	      &nbsp;&nbsp;
+	    </div>
+	    <div class="col-sm-3">
+	      <img src="img/profile/akash.jpg" class="img-responsive" alt="Akash Mathwani" max-width="220">
+	      <h2>Akash Mathwani</h2>
+	      <h4 style="color:gray;">Football Organiser</h4><a href="https://www.facebook.com/AkashMathwani" target=_blank><i class="fa fa-facebook-square" style="font-size:24px"></i></a>
+      	  <a href="mailto:2015eeb1045@iitrpr.ac.in" target=_blank><i class="fa fa-envelope" style="font-size:24px"></i></a>
+	      <h4>+91-9888927389</h4>
+	      <h4>2015eeb1045@iitrpr.ac.in</h4>
+	      &nbsp;&nbsp;
+	    </div>
+	</div>
+	<div class="row">
+	    <div class="col-sm-3">
+	      <img src="img/profile/vaibhav.jpg" class="img-responsive" alt="Vaibhav Chopra" max-width="220">
+	      <h2>Vaibhav Chopra</h2>
+	      <h4 style="color:gray;">Lawn Tennis Organiser</h4><a href="https://www.facebook.com/vaibhav.chopra.777" target=_blank><i class="fa fa-facebook-square" style="font-size:24px"></i></a>
+      	  <a href="mailto:2016eeb1104@iitrpr.ac.in" target=_blank><i class="fa fa-envelope" style="font-size:24px"></i></a>
+	      <h4>+91-9468828078</h4>
+	      <h4>2016eeb1104@iitrpr.ac.in</h4>
+	      &nbsp;&nbsp;
+	    </div>
+	    <div class="col-sm-3">
+	      <img src="img/profile/tanay.jpg" class="img-responsive" alt="Tanay Narshana" max-width="220">
+	      <h2>Tanay Narshana </h2>
+	      <h4 style="color:gray;">Table Tennis Organiser</h4><a href="https://www.facebook.com/tnltt" target=_blank><i class="fa fa-facebook-square" style="font-size:24px"></i></a>
+      	<a href="mailto:2015eeb1076@iitrpr.ac.in" target=_blank><i class="fa fa-envelope" style="font-size:24px"></i></a>
+	      <h4>+91-9409033322</h4>
+	      <h4>2015eeb1076@iitrpr.ac.in</h4>
+	      &nbsp;&nbsp;
+	    </div>
+	    <div class="col-sm-3">
+	      <img src="img/profile/vishal.jpg" class="img-responsive" alt="Vishal Kumar" max-width="220">
+	      <h2>Vishal Kumar</h2>
+	      <h4 style="color:gray;">Volleyball (Boys) Organiser</h4><a href="https://www.facebook.com/vishal.goyal.7568" target=_blank><i class="fa fa-facebook-square" style="font-size:24px"></i></a>
+	      <a href="mailto:2015med1010@iitrpr.ac.in" target=_blank><i class="fa fa-envelope" style="font-size:24px"></i></a>
+	      <h4>+91-9464087760</h4>
+	      <h4>2015med1010@iitrpr.ac.in</h4>
+	      &nbsp;&nbsp;
+	    </div>
+	    <div class="col-sm-3">
+	      <img src="img/profile/neha.jpg" class="img-responsive" alt="Neha Meena" max-width="220">
+	      <h2>Neha Meena</h2>
+	      <h4 style="color:gray;">Volleyball (Girls) Organiser</h4><a href="https://www.facebook.com/profile.php?id=100004860855786" target=_blank><i class="fa fa-facebook-square" style="font-size:24px"></i></a>
+      		<a href="mailto:2014meb1101@iitrpr.ac.in" target=_blank><i class="fa fa-envelope" style="font-size:24px"></i></a>
+	      <h4>+91-9646456272</h4>
+	      <h4>2014meb1101@iitrpr.ac.in</h4>
+	      &nbsp;&nbsp;
+	    </div>
+	</div>
+	<div class="row">
+	    <div class="col-sm-3">
+	      <img src="img/profile/pratik.jpg" class="img-responsive" alt="Pratik Chhajer" max-width="220">
+	      <h2>Pratik Chhajer</h2>
+	      <h4 style="color:gray;">Web Organiser</h4><a href="https://www.facebook.com/PratikChhajer07" target=_blank><i class="fa fa-facebook-square" style="font-size:24px"></i></a>
+      <a href="mailto:2015csb1025@iitrpr.ac.in" target=_blank><i class="fa fa-envelope" style="font-size:24px"></i></a>
+	      <h4>+91-9530277235</h4>
+	      <h4>2015csb1025@iitrpr.ac.in</h4>
+	      &nbsp;&nbsp;
+	    </div>
+	</div>
+	<hr>
+</div>
+<div class="modal fade" id="contact_modal" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" align="center">Contact Us</h4>
+      </div>
+      <div class="modal-body">
+      	<h3 align=center>Name : Preetam Kumar</h3>
+      	<br>
+      	<h3 align=center>Mobile : +91-9646456040</h3>
+      	<br>
+        <h3 align=center>Email : sports.secy@iitrpr.ac.in</h3>
+        <p align=center><a href="sports.secy@iitrpr.ac.in" target=_blank><i class="fa fa-envelope" style="font-size:36px;color:black;"></i></a></p>
+        <br>
+        <h3 align=center>Follow us on : </h3>
+        <p align=center><a href="https://www.facebook.com/aarohan.iitrpr" target=_blank><i class="fa fa-facebook-square" style="font-size:36px;color:black;"></i></a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<div class="container" id="gallery_content">
+	<br><br>
+	<div class="container">
+  <h3 align="center">A Glimpse of sports events at IIT Ropar</h3>
+  </div>
+  <div id="myCarousel" class="carousel slide">
+    <!-- Indicators -->
+    <!--
+    <ol class="carousel-indicators">
+      <li class="item1 active"></li>
+      <li class="item2"></li>
+      <li class="item3"></li>
+      <li class="item4"></li>
+      <li class="item5"></li>
+      <li class="item6"></li>
+      <li class="item7"></li>
+      <li class="item8"></li>
+      <li class="item9"></li>
+      <li class="item10"></li>
+      <li class="item11"></li>
+      <li class="item12"></li>
+    </ol>
+	-->
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="img/g1.jpg" alt="aarohan-iitrpr" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="img/g2.jpg" alt="aarohan-iitrpr" width="460" height="345">
+      </div>
+    
+      <div class="item">
+        <img src="img/g3.jpg" alt="aarohan-iitrpr" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="img/g4.jpg" alt="aarohan-iitrpr" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="img/g5.jpg" alt="aarohan-iitrpr" width="460" height="345">
+      </div>
+    
+      <div class="item">
+        <img src="img/g6.jpg" alt="aarohan-iitrpr" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="img/g7.jpg" alt="aarohan-iitrpr" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="img/g8.jpg" alt="aarohan-iitrpr" width="460" height="345">
+      </div>
+    
+      <div class="item">
+        <img src="img/g9.jpg" alt="aarohan-iitrpr" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="img/g10.jpg" alt="aarohan-iitrpr" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="img/g11.jpg" alt="aarohan-iitrpr" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="img/g12.jpg" alt="aarohan-iitrpr" width="460" height="345">
+      </div>
+    
+      <div class="item">
+        <img src="img/g13.jpg" alt="aarohan-iitrpr" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="img/g14.jpg" alt="aarohan-iitrpr" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="img/g15.jpg" alt="aarohan-iitrpr" width="460" height="345">
+      </div>
+    
+      <div class="item">
+        <img src="img/g16.jpg" alt="aarohan-iitrpr" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="img/g17.jpg" alt="aarohan-iitrpr" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="img/g18.jpg" alt="aarohan-iitrpr" width="460" height="345">
+      </div>
+    
+      <div class="item">
+        <img src="img/g19.jpg" alt="aarohan-iitrpr" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="img/g20.jpg" alt="aarohan-iitrpr" width="460" height="345">
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <br><br>
+</div>
+
+<script>
+
+$(document).ready(function(){
+    // Activate Carousel
+    $("#myCarousel").carousel();
+    
+    // Enable Carousel Indicators
+    $(".item1").click(function(){
+        $("#myCarousel").carousel(0);
+    });
+    $(".item2").click(function(){
+        $("#myCarousel").carousel(1);
+    });
+    $(".item3").click(function(){
+        $("#myCarousel").carousel(2);
+    });
+    $(".item4").click(function(){
+        $("#myCarousel").carousel(3);
+    });
+    
+    // Enable Carousel Controls
+    $(".left").click(function(){
+        $("#myCarousel").carousel("prev");
+    });
+    $(".right").click(function(){
+        $("#myCarousel").carousel("next");
+    });
+});
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+</body>
+</html>
+
